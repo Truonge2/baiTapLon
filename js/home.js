@@ -2,6 +2,7 @@ let arrayCard = document.querySelectorAll('.card');
 
 arrayCard.forEach(card => {
     card.addEventListener('click', function() {
+        console.log(card);
         localStorage.removeItem('chiTietSP');
         if(luuLocalStoragCuaChiTiet(card))
             window.location.href = '../html/chiTietSanPham.html';
@@ -59,8 +60,9 @@ function docLocalStorageCuaChiTiet() {
 }
 
 function luuLocalStoragCuaChiTiet(card) {
-    if(card.firstElementChild && card.firstElementChild.tagName === "SPAN"){
-        return;
+    if(card.firstElementChild && card.firstElementChild.tagName === "SPAN" && card.firstElementChild.innerText==""){
+        console.log('Không lưu sản phẩm này');
+        return false;
     }
     let id, name, price, img, theLoai;
     img = card.querySelector('img').src;
@@ -75,6 +77,7 @@ function luuLocalStoragCuaChiTiet(card) {
     let chiTietSP = JSON.parse(localStorage.getItem('chiTietSP')) || [];
     chiTietSP.push({ id: id, name: name, price: price, img: img, theLoai: theLoai });
     localStorage.setItem('chiTietSP', JSON.stringify(chiTietSP));
+    return true;
 }
 function goToTongSanPham(){
     window.location.href = '../html/tongSanPham.html';
