@@ -1,0 +1,141 @@
+
+main, .teaser{
+      background-color: #24262B;
+}
+
+/* phần slider */
+main .swiper-container{
+      padding: 2vw;
+      overflow: hidden;
+}
+main .swiper-slide {
+      background-size: cover;
+      width: 40vw;
+      border-left: 1vw solid transparent;
+      border-right: 1vw solid transparent;
+
+      background: linear-gradient(white, white) padding-box,
+            linear-gradient(
+             rgba(63, 218, 216, 1) 0%,
+             rgba(47, 201, 226, 1) 20%,
+             rgba(28, 127, 238, 1) 40%,
+             rgba(95, 21, 242, 1) 60%,
+             rgba(186, 12, 248, 1) 100%);
+      overflow: hidden;
+      border-radius: 8px;
+}
+main .swiper-slide .nameOfProduct{
+      font-size: 2vw !important;
+}
+main .card {
+      width: 100%;
+      overflow: hidden;
+      background-color: #24262B;
+      border-radius: 10px;
+      img{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+      }
+}
+main .nameOfProduct {
+      color: white;
+} 
+/* phần adv sản phẩm */
+main .productAdv .card:hover{
+      transform: scale(1.05);
+}
+.card-title{
+      text-align: center;
+}
+/* .card{
+      position: relative;
+      overflow: hidden;
+ 
+      
+} */
+.productAdv .card-body{
+      margin: 0 !important;
+}
+main .card-body a{
+      text-decoration: none;
+}
+
+main .card-body a:hover,
+main .nameOfProduct:hover{
+      color:rgb(172, 0, 172);
+}
+/* phần cho .productAdv */
+.productAdv .card span{
+      position: absolute;
+      display: block;
+  }
+.productAdv  .card span:nth-child(1){
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1vw;
+      background: linear-gradient(90deg,transparent, rgb(188, 0, 188));
+      animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1{
+      0%{
+          left: -100%;
+      }
+      50%,100%{
+          left: 100%;
+      }
+  }
+ .productAdv .card span:nth-child(2){
+      top: -100%;
+      right: 0;
+      width: 1vw;
+      height: 100%;
+      background: linear-gradient(180deg,transparent,rgb(188, 0, 188));
+      animation: animate2 2s linear infinite;
+      animation-delay: 0.5s;
+  }
+  @keyframes animate2{
+      0%{
+          top: -100%;
+      }
+      50%,100%{
+          top: 100%;
+      }
+  }
+ .productAdv .card span:nth-child(3){
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 1vw;
+      background: linear-gradient(270deg,transparent,rgb(188, 0, 188));
+      animation: animate3 2s linear infinite;
+      animation-delay: 0.5s;
+  }
+  @keyframes animate3{
+      0%{
+          right: -100%;
+      }
+      50%,100%{
+          right: 100%;
+      }
+  }
+  
+  
+ .productAdv .card span:nth-child(4){
+      bottom: -100%;
+      left: 0;
+      width: 1vw;
+      height: 100%;
+      background: linear-gradient(360deg,transparent,rgb(188, 0, 188));
+      animation: animate4 2s linear infinite;
+      animation-delay: 1s;
+  }
+  @keyframes animate4{
+      0%{
+          bottom: -100%;
+      }
+      50%,100%{
+          bottom: 100%;
+      }
+  }

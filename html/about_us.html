@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About Us</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="icon" href="../anh/logo/sunglasses-logo-png-removebg-preview.png" type="image/icon type">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+      <style>
+            .shades img{
+                  width: 10vw;
+            }
+      </style>
+</head>
+
+<body>
+      <header class="container-fluid">
+            <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary p-0">
+                  <a href="home.html" class="flex-shrink-0" style="max-width: 15%; overflow: hidden;"> <img
+                              src="../anh/logo/sunglasses-logo-png-removebg-preview.png" alt="" loading="lazy"
+                              style="width: 100%;"> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                              <li class="nav-item px-3">
+                                    <a id="trangChuNavbar" class="nav-link active" aria-current="page"
+                                          href="home.html">Trang chủ</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="namCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNam"
+                                          role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Nam
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="nuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNu"
+                                          role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Nữ
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="thuongHieuCollapse" class="btn" data-bs-toggle="collapse"
+                                          href="#collapseThuongHieu" role="button" aria-expanded="false"
+                                          aria-controls="collapseExample">
+                                          Thương hiệu
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <form action="" method="post">
+                                          <input type="text" name="search" id="search"
+                                                placeholder="   Tìm kiếm sản phẩm">
+                                          <button type="submit" onclick="goToTongSanPham()"><i class="fa fa-search"></i></button>
+                                    </form>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a href="#" id="gioHangButton" class="btn py-0 border-0" type="button"
+                                          data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightGioHang"
+                                          aria-controls="offcanvasRightGioHang" onclick="isGioHangEmpty()">
+                                          <i class="fas fa-shopping-cart"></i>
+                                          Giỏ hàng
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a href="../html/login.html" class="nk-text-login"><i
+                                                class="far fa-user-circle"></i>
+                                          Tài khoản</a>
+                              </li>
+   
+                              <li class="nav-item px-3">
+                                    <a href="about_us.html">
+                                          About Us
+                                          <i class="fas fa-info-circle"> </i>
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
+            </nav>
+            <div class="collapse" id="collapseNu">
+                  <div class="row">
+                        <div class="left col-3">
+                              <div class="ShopBy">
+                                    <h6><b>Shop By</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Shop All</a></li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                                          </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
+                                    </ul>
+                              </div>
+                              <div class="Topbrand">
+                                    <h6><b>Top brand</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                                          <li><a href="tongSanPham.html">Oakley</a></li>
+                                          <li><a href="tongSanPham.html">Parada</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="card col-6">
+                              <a href="#"><img src="../anh/advertise/sgh-ddm-women.png" class="card-img-top" alt=""
+                                          loading="lazy">
+
+                              </a>
+                              <div class="card-body">
+                                    <p class="card-title">Most-Loved Styles
+                                          Discover the best-selling sunglasses we can’t get enough of.</p>
+                              </div>
+
+
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+
+                                    <a href="#">
+                                          <img src="../anh/advertise/sgh-ddm-2.png" class="card-img-top" alt=""
+                                                loading="lazy">
+
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">Dolce&Gabbana Spring Summer 2024</p>
+                                    </div>
+
+                              </div>
+                              <div class="card">
+
+                                    <a href="#"><img src="../anh/advertise/sgh-ddm-4.png" class="card-img-top w-100"
+                                                alt="" loading="lazy">
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">TREND: Tortoise Remix</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="collapse" id="collapseNam">
+                  <div class="row">
+                        <div class="left col-3">
+                              <div class="ShopBy">
+                                    <h6> <b>Shop By</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Shop All</a></li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                                          </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
+                                    </ul>
+                              </div>
+                              <div class="Topbrand">
+                                    <h6> <b>Top brand</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                                          <li><a href="tongSanPham.html">Oakley</a></li>
+                                          <li><a href="tongSanPham.html">Parada</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="card col-6">
+                              <a href="#"><img src="../anh/advertise/sgh-ddm-men.png" class="card-img-top" alt=""
+                                          loading="lazy">
+
+                              </a>
+                              <div class="card-body">
+                                    <p class="card-title">Most-Loved Styles
+                                          Discover the best-selling sunglasses we can’t get enough of.</p>
+                              </div>
+
+
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+
+                                    <a href="#">
+                                          <img src="../anh/advertise/sgh-ddm-2-nam.png" class="card-img-top" alt=""
+                                                loading="lazy">
+
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">Oakley Sphaera™</p>
+                                    </div>
+
+                              </div>
+                              <div class="card">
+
+                                    <a href="#"><img src="../anh/advertise/sgh-ddm-3-nam.png" class="card-img-top w-100"
+                                                alt="" loading="lazy">
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">collection 2023</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="collapse row" id="collapseThuongHieu">
+                  <div class="Designer col-4">
+                        <table class="table">
+                              <thead>
+                                    <tr>
+                                          <th> <b>Designer</b></th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Ray-Ban</a></td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Oakley</a> </td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Versace</a> </td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Prada</a></td>
+
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Burberry</a></td>
+
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Alain Mikli</a></td>
+                                          <td>
+                                                <p class="new" style="background-color: rgb(246, 97, 97);">NEW</p>
+                                          </td>
+                                    </tr>
+
+                              </tbody>
+                        </table>
+                  </div>
+                  <div class="card col-4">
+                        <a href="#" class="text-center"><img
+                                    src="../anh/advertise/Qq2WqVvcgJWsWVi82t5DHtdNZeZlcvgehxQRv5dV.pgn.png"
+                                    class="card-img-top" alt="" loading="lazy">
+                        </a>
+                        <div class="card-body text-center">
+                              <p class="card-title">Lenny Kravitz x Ray-Ban
+                                    Ray-Ban Reverse lens design meets legendary musician and style icon Lenny Kravitz.</p>
+                        </div>
+                  </div>
+                  <div class="card col-4">
+                        <a href="#" class="text-center"><img
+                                    src="../anh/advertise/oXHEJhcxfyiRpKa0YTWfIERIyrpEkba93cIewNMr.png"
+                                    class="card-img-top" alt="" loading="lazy">
+                        </a>
+                        <div class="card-body text-center">
+                              <p class="card-title">New In
+                                    Fashion-forward shades that are fresh on the scene.</p>
+                        </div>
+                  </div>
+
+            </div>
+      </header>
+      <main>
+            <div class="container">
+                  <div class="row d-flex justify-content-around my-5">
+                        <div class="col-6"><img src="../anh/advertise/about-us-hero-adam.png" alt="" loading="lazy" style="width: 95%;"></div>
+                        <div class="col-6 text-center align-self-center">
+                              <h1 class="fw-bolder" style="font-size: 3vw;">AFFORDABLE SHADES SINCE 2005</h1>
+                              <p style="font-size: 1.5vw;">“Growing up, my dad had a pair of sneakers in the garage that he’d wear when he mowed the lawn. He called them his ‘knockaround’ sneakers—he could count on them, they were dependable, and he didn’t care if they got beaten up.
+
+                                    So, I just applied that idea to sunglasses. I wanted them to be affordable, if you lost them or broke them, no big deal. The Knockaround name seemed like a natural fit—like, I’m just going to knock around this pair of sunglasses.”
+                                    <br>
+                                    <b>– Adam “Ace” Moyer (Founder)</b></p>
+                        </div>
+                  </div>
+                  <div class="row d-flex justify-content-around my-5 shades">
+                        <div class="col-6 align-self-center">
+                              <h1 class="fw-bolder" style="font-size: 3vw;">QUALITY SHADES THAT WON'T BREAK THE BANK</h1>
+                              <p style="font-size: 1.5vw;">Starting at $35, our sunglasses are available in over 15 different frame styles, a ton of different color combinations, and are offered with both standard UV400 protection and polarized lenses.</p>
+                              <div class="value-props">
+                                    <ul style="list-style: none;">
+                                      <li class="d-inline"><img src="https://cdn.shopify.com/s/files/1/1356/7869/files/free-shipping-over70.png?v=1701471686" alt= ></li>
+                                      <li class="d-inline"><img src="https://cdn.shopify.com/s/files/1/1356/7869/files/Happiness.png?17871513238145900523" alt="We guarantee happiness"></li>
+                                      <li class="d-inline"><img src="https://cdn.shopify.com/s/files/1/1356/7869/files/FreeReturns.png?17871513238145900523" alt="Free returns on all standard orders"></li>
+                                      <li class="d-inline"><img src="https://cdn.shopify.com/s/files/1/1356/7869/files/KA.png?17871513238145900523" alt="The OG affordable sunglasses company"></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                              <img src="../anh/advertise/about-us-second-hero.png" alt="" loading="lazy" style="width: 95%;">
+                        </div>
+                  </div>
+            </div>
+      </main>
+      <footer class="footer container-fluid">
+            <div class="container">
+                  <div class="row">
+                        <div class="footer-col col">
+                              <h4>company</h4>
+                              <ul>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">our services</a></li>
+                                    <li><a href="#">privacy policy</a></li>
+                                    <li><a href="#">affiliate program</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>get help</h4>
+                              <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">shipping</a></li>
+                                    <li><a href="#">returns</a></li>
+                                    <li><a href="#">order status</a></li>
+                                    <li><a href="#">payment options</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>Brand</h4>
+                              <ul>
+                                    <li><a href="#">Ray-Ban</a></li>
+                                    <li><a href="#">Oakley</a></li>
+                                    <li><a href="#">Prada</a></li>
+                                    <li><a href="#">ersace</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>follow us</h4>
+                              <div class="social-links">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+                <!-- phần giỏ hàng -->
+    <div class="phanGioHang">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body overflow-scroll">
+              <div class="container">
+              </div>
+          </div>
+          <hr>
+          <div class="offcanvas-footer m-2 p-2">
+              <div class="row justify-content-around">
+                  <p class="col-3">
+                      Tổng tiền:
+                  </p>
+                  <span class="col-8 text-end tongTien"><span>0</span>đ</span>
+              </div>
+              <div class="">
+                  <button id="thanhToanButton" type="button" class="btn btn-primary" onclick="thanhToan()">Thanh toán</button>
+                  <!-- data-bs-toggle="modal" data-bs-target="#payModal" -->
+              </div>
+              <audio id="audioPay">
+                            <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3" type="audio/mpeg">
+                        </audio>
+
+          </div>
+      </div>
+      <!-- thông báo thanh toán -->
+      <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLable" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header text-center" style="background-color: greenyellow;">
+
+                      <div class="d-flex justify-content-center flex-column align-item-center w-100">
+                          <i style="font-size: 8vw;" class="fa-regular fa-circle-check"></i>
+                          <h3>Thành công</h3>
+                      </div>
+
+
+                      <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body text-center">
+                      <h3>Cảm ơn bạn đã mua hàng!</h3>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tiếp tục mua sắm</button>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- thông báo xóa sản phẩm -->
+      <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLable" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header text-center" style="background-color: rgb(254, 78, 78);">
+
+                      <div class="w-100">
+                          <i style="font-size: 6vw;" class="fa-regular fa-trash-can"></i>
+                      </div>
+                      <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body text-center">
+                      <h3>Bạn chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</h3>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Trở lại</button>
+                      <button type="button" class="btn btn-primary" id="xoaSanPhamKhoiGioHangButton">Xóa</button>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+
+<script src="../js/thanhDieuHuong.js"></script>
+<script src="../js/gioHang.js"></script>
+<script src="../js/home.js"></script>
+
+
+</html>

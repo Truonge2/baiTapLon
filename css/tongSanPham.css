@@ -1,0 +1,51 @@
+.swiper {
+      width: 80%;
+    }
+.swiper-slide {
+      text-align: center;
+      font-size: 1.5vw;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 55%;
+      object-fit: cover;
+    }
+.swiper-slide:hover{
+  background-color: black;
+  color: white!important;
+}
+
+.offcanvas-body ul{
+  list-style: none;
+}
+
+/* #collapsePhanSanPhamMoiPhan1{
+  animation: SildeUptoDown 3s ease forwards;
+} */
+.animationSildeUpToDown{
+  animation: SildeUptoDown 3s ease forwards;
+}
+
+.animationSildeDownToUp{
+  animation: SildeDownToUp 3s ease forwards;
+}
+@keyframes SildeUptoDown {
+0% { clip-path: polygon(0 0, 100% 0, 100% 0, 0% 0); }
+50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+}
+@keyframes SildeDownToUp {
+0% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+50% { clip-path: polygon(0 0, 100% 0, 100% 0, 0% 0); }
+}
+.hangMuc a{
+  cursor: default;
+}

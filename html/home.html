@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trang chủ Mắt Kính Việt</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="icon" href="../anh/logo/sunglasses-logo-png-removebg-preview.png" type="image/icon type">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+</head>
+
+<body>
+      <header class="container-fluid">
+            <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary p-0">
+                  <a href="home.html" class="flex-shrink-0" style="max-width: 15%; overflow: hidden;"> <img
+                              src="../anh/logo/sunglasses-logo-png-removebg-preview.png" alt="" loading="lazy"
+                              style="width: 100%;"> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                              <li class="nav-item px-3">
+                                    <a id="trangChuNavbar" class="nav-link active" aria-current="page"
+                                          href="home.html">Trang chủ</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="namCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNam"
+                                          role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Nam
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="nuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNu"
+                                          role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Nữ
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a id="thuongHieuCollapse" class="btn" data-bs-toggle="collapse"
+                                          href="#collapseThuongHieu" role="button" aria-expanded="false"
+                                          aria-controls="collapseExample">
+                                          Thương hiệu
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <form action="" method="post">
+                                          <input type="text" name="search" id="search"
+                                                placeholder="   Tìm kiếm sản phẩm">
+                                          <button type="submit" onclick="goToTongSanPham()"><i class="fa fa-search"></i></button>
+                                    </form>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a href="#" id="gioHangButton" class="btn py-0 border-0" type="button"
+                                          data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightGioHang"
+                                          aria-controls="offcanvasRightGioHang" onclick="isGioHangEmpty()">
+                                          <i class="fas fa-shopping-cart"></i>
+                                          Giỏ hàng
+                                    </a>
+                              </li>
+                              <li class="nav-item px-3">
+                                    <a href="../html/login.html" class="nk-text-login"><i
+                                                class="far fa-user-circle"></i>
+                                          Tài khoản</a>
+                              </li>
+  
+                              <li class="nav-item px-3">
+                                    <a href="about_us.html">
+                                          About Us
+                                          <i class="fas fa-info-circle"> </i>
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
+            </nav>
+            <div class="collapse" id="collapseNu">
+                  <div class="row">
+                        <div class="left col-3">
+                              <div class="ShopBy">
+                                    <h6><b>Shop By</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Shop All</a></li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                                          </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
+                                    </ul>
+                              </div>
+                              <div class="Topbrand">
+                                    <h6><b>Top brand</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                                          <li><a href="tongSanPham.html">Oakley</a></li>
+                                          <li><a href="tongSanPham.html">Parada</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="card col-6">
+                              <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-women.png" class="card-img-top" alt=""
+                                          loading="lazy">
+
+                              </a>
+                              <div class="card-body">
+                                    <p class="card-title">Most-Loved Styles
+                                          Discover the best-selling sunglasses we can’t get enough of.</p>
+                              </div>
+
+
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+
+                                    <a href="tongSanPham.html">
+                                          <img src="../anh/advertise/sgh-ddm-2.png" class="card-img-top" alt=""
+                                                loading="lazy">
+
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">Dolce&Gabbana Spring Summer 2024</p>
+                                    </div>
+
+                              </div>
+                              <div class="card">
+
+                                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-4.png" class="card-img-top w-100"
+                                                alt="" loading="lazy">
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">TREND: Tortoise Remix</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="collapse" id="collapseNam">
+                  <div class="row">
+                        <div class="left col-3">
+                              <div class="ShopBy">
+                                    <h6> <b>Shop By</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Shop All</a></li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                                          </li>
+                                          <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
+                                    </ul>
+                              </div>
+                              <div class="Topbrand">
+                                    <h6> <b>Top brand</b></h6><br>
+                                    <ul>
+
+                                          <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                                          <li><a href="tongSanPham.html">Oakley</a></li>
+                                          <li><a href="tongSanPham.html">Parada</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="card col-6">
+                              <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-men.png" class="card-img-top" alt=""
+                                          loading="lazy">
+
+                              </a>
+                              <div class="card-body">
+                                    <p class="card-title">Most-Loved Styles
+                                          Discover the best-selling sunglasses we can’t get enough of.</p>
+                              </div>
+
+
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+
+                                    <a href="tongSanPham.html">
+                                          <img src="../anh/advertise/sgh-ddm-2-nam.png" class="card-img-top" alt=""
+                                                loading="lazy">
+
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">Oakley Sphaera™</p>
+                                    </div>
+
+                              </div>
+                              <div class="card">
+
+                                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-3-nam.png" class="card-img-top w-100"
+                                                alt="" loading="lazy">
+                                    </a>
+                                    <div class="card-body">
+                                          <p class="card-title">collection 2023</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="collapse row" id="collapseThuongHieu">
+                  <div class="Designer col-4">
+                        <table class="table">
+                              <thead>
+                                    <tr>
+                                          <th> <b>Designer</b></th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Ray-Ban</a></td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Oakley</a> </td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Versace</a> </td>
+                                          <td>
+                                                <p class="Topbrand">TOP BRAND</p>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Prada</a></td>
+
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Burberry</a></td>
+
+                                    </tr>
+                                    <tr>
+                                          <td><a href="tongSanPham.html">Alain Mikli</a></td>
+                                          <td>
+                                                <p class="new" style="background-color: rgb(246, 97, 97);">NEW</p>
+                                          </td>
+                                    </tr>
+
+                              </tbody>
+                        </table>
+                  </div>
+                  <div class="card col-4">
+                        <a href="tongSanPham.html" class="text-center"><img
+                                    src="../anh/advertise/Qq2WqVvcgJWsWVi82t5DHtdNZeZlcvgehxQRv5dV.pgn.png"
+                                    class="card-img-top" alt="" loading="lazy">
+                        </a>
+                        <div class="card-body text-center">
+                              <p class="card-title">Lenny Kravitz x Ray-Ban
+                                    Ray-Ban Reverse lens design meets legendary musician and style icon Lenny Kravitz.</p>
+                        </div>
+                  </div>
+                  <div class="card col-4">
+                        <a href="tongSanPham.html" class="text-center"><img
+                                    src="../anh/advertise/oXHEJhcxfyiRpKa0YTWfIERIyrpEkba93cIewNMr.png"
+                                    class="card-img-top" alt="" loading="lazy">
+                        </a>
+                        <div class="card-body text-center">
+                              <p class="card-title">New In
+                                    Fashion-forward shades that are fresh on the scene.</p>
+                        </div>
+                  </div>
+
+            </div>
+      </header>
+      <div class="container">
+            <section title="quangCao">
+                  <div class="row quangCao">
+                        <div class="col">
+                              <div id="carouselQuangCao" class="carousel slide text-center" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselQuangCao" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselQuangCao" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                          <div class="carousel-item active" data-bs-interval="10000">
+                                                <a href="#"><img src="../anh/advertise/img_dk_item_home_slider_2_1.png"
+                                                            loading="lazy"></img></a>
+                                          </div>
+                                          <div class="carousel-item" data-bs-interval="10000">
+                                                <a href="#"><img src="../anh/advertise/img_dk_item_home_slider_3_1.png"
+                                                            loading="lazy"></img></a>
+                                          </div>
+                                    </div>
+                                    <button class="carousel-control-prev  justify-content-start" type="button"
+                                          data-bs-target="#carouselQuangCao" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"
+                                                style="visibility: hidden;"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next justify-content-end" type="button"
+                                          data-bs-target="#carouselQuangCao" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"
+                                                style="visibility: hidden;"></span>
+                                          <span class="visually-hidden">Next</span>
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row  banner m-3">
+                        <img class="col-4" src="../anh/banner/banner_next_slide_1.png" alt="" loading="lazy">
+                        <img class="col-4" src="../anh/banner/banner_next_slide_2.png" alt="" loading="lazy">
+                        <img class="col-4" src="../anh/banner/banner_next_slide_3.png" alt="" loading="lazy">
+                  </div>
+            </section>
+            <main>
+                  <section id="SanPhamHot">
+                        <div class="text-center m-5">
+                              <img src="../anh/gif/Macdinh-1-1200x120.gif" alt="" loading="lazy"
+                                    style="margin-top: 1vw; width: 100%;">
+                              <div id="countDown" class="row d-flex w-30">
+                                    <div class="day col border-0">
+                                          <span id="day"></span>
+                                          <div class="text">Ngày</div>
+                                    </div>
+
+                                    <div class="hour col">
+                                          <span id="hour"></span>
+                                          <div class="text">Giờ</div>
+                                    </div>
+                                    <div class="minute col">
+                                          <span id="minute"></span>
+                                          <div class="text">Phút</div>
+                                    </div>
+                                    <div class="second col">
+                                          <span id="second"></span>
+                                          <div class="text">Giây</div>
+                                    </div>
+                              </div>
+
+                              <div class="swiper SanPhamHotSwiper">
+                                    <div class="swiper-wrapper">
+                                          <div class="swiper-slide slide_1">
+                                                <div class="row row-cols-sm-1 row-cols-lg-3 slide-1  m-3">
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/1fr.png" class="card-img-top" alt="" loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+
+                                                                        
+                                                                  <div class="card-body">
+                                                                            <div id="1" class="BestSeller nam Ray-Ban XL" style="display: none;"></div>
+                                                                            <h6 class="card-title nameOfProduct">SunSavvy Shades</h6>
+                                                                            <strong class="price text-danger text-center d-block priceOfProduct">
+                                                                                    <span>1.999.000</span>đ<br>
+                                                                                    <span class="price-and-discount">
+                                                                                          <label
+                                                                                                class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                                <span>2.400.000</span>đ
+                                                                                          </label>
+                                                                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                                                                    </span>
+                                                                              </strong>
+                                                                  </div>
+                                                                  
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/26fr.png" class="card-img-top"
+                                                                        alt="" loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                        <div class="card-body">
+                                                                              <div id="26" class="nu Oakley X"
+                                                                                    style="display: none;"></div>
+                                                                              <h6 class="card-title nameOfProduct">
+                                                                                    UrbanRays Shades</h6>
+                                                                              <strong
+                                                                                    class="price text-danger text-center d-block priceOfProduct">
+                                                                                    <span>789.000</span>đ<br>
+                                                                                    <span class="price-and-discount">
+                                                                                          <label
+                                                                                                class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                                <span>9.050.000</span>đ
+                                                                                          </label>
+                                                                                          <small class="discount"
+                                                                                                style="background-color: pink;">-<span>20</span>%</small>
+                                                                                    </span>
+                                                                              </strong>
+                                                                        </div>
+                                                                  
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/7fr.png" class="card-img-top" alt="" loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+ 
+                                                                        
+                                                                        <div class="card-body">
+                                                                            <div id="7" class="New nu Ray-Ban L" style="display: none;"></div>
+                                                                            <h6 class="card-title nameOfProduct">ShadeMaster Glasses</h6>
+                                                                            <strong class="price text-danger text-center d-block priceOfProduct">
+                                                                                  <span>1.111.000</span>đ<br>
+                                                                                  <span class="price-and-discount">
+                                                                                        <label
+                                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                              <span>2.123.000</span>đ
+                                                                                        </label>
+                                                                                        <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                                                                  </span>
+                                                                            </strong>
+                                                                        </div>
+                                                                
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="swiper-slide slide_2">
+                                                <div class="row row-cols-sm-1 row-cols-lg-3 slide-1 m-3">
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/28fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="28" class="nam Parada L"
+                                                                              style="display: none;"></div>
+                                                                        <h6 class="card-title nameOfProduct">
+                                                                              SunBreeze Sunglasses</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>9.999.000</span>đ<br>
+                                                                              <span class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>11.498.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/29fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="29" class=" nam Burberry M"
+                                                                              style="display: none;"></div>
+                                                                        <h6 class="card-title nameOfProduct">
+                                                                              ShineMaster Shades</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>519.000</span>đ<br>
+                                                                              <span class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>3.123.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/30fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="30" class="nu Alain_Mikli X"
+                                                                              style="display: none;"></div>
+                                                                        <h6 class="card-title nameOfProduct">
+                                                                              PrismPerfect Glasses</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>8.000.000</span>đ<br>
+                                                                              <span class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>99.000.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                           </div>
+                                           <div class="swiper-slide slide_3">
+                                                <div class="row row-cols-sm-1 row-cols-lg-3 slide-1 m-3">
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/22fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="22"
+                                                                              class="Discount nam Parada L"
+                                                                              style="display: none;"></div>
+                                                                        <h6
+                                                                              class="card-title nameOfProduct">
+                                                                              HorizonGaze Shades</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>499.000</span>đ<br>
+                                                                              <span
+                                                                                    class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>1.400.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/23fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="23"
+                                                                              class="Discount nam Burberry M"
+                                                                              style="display: none;"></div>
+                                                                        <h6
+                                                                              class="card-title nameOfProduct">
+                                                                              HnGaze Shades</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>619.000</span>đ<br>
+                                                                              <span
+                                                                                    class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>1.000.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-4 mb-2">
+                                                            <div class="card h-90">
+                                                                  <img src="../anh/kinh/19fr.png"
+                                                                        class="card-img-top" alt=""
+                                                                        loading="lazy">
+                                                                  <img class="Product-border"
+                                                                        src="../anh/Product-border/product-border2.png"
+                                                                        alt="">
+                                                                  <img class="Product-border-hot"
+                                                                        src="../anh/Product-border/product-hot.png"
+                                                                        alt="">
+
+                                                                  <div class="card-body">
+                                                                        <div id="19"
+                                                                              class="New nu Ray-Ban XL"
+                                                                              style="display: none;"></div>
+                                                                        <h6
+                                                                              class="card-title nameOfProduct">
+                                                                              VistaVogue Glasses</h6>
+                                                                        <strong
+                                                                              class="price text-danger text-center d-block priceOfProduct">
+                                                                              <span>2.111.000</span>đ<br>
+                                                                              <span
+                                                                                    class="price-and-discount">
+                                                                                    <label
+                                                                                          class="price-and-old-black text-decoration-line-through text-muted">
+                                                                                          <span>2.999.000</span>đ
+                                                                                    </label>
+                                                                                    <small class="discount"
+                                                                                          style="background-color: pink;">-<span>20</span>%</small>
+                                                                              </span>
+                                                                        </strong>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-button-next"
+                                    style="visibility: hidden; background-color: transparent; border-radius: 0%;">
+                                    </div>
+                                    <div class="swiper-button-prev"
+                                    style="visibility: hidden; background-color: transparent; border-radius: 0%;">
+                                    </div>
+                              </div>
+                  </section>
+                  <script title="countDown">
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("May 2, 2024 0:0:0").getTime();
+
+                        // Update the count down every 1 second
+                        var x = setInterval(function () {
+
+                              // Get today's date and time
+                              var now = new Date().getTime();
+
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+
+                              // Time calculations for days, hours, minutes and seconds
+                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                              // Output the result in an element with id="demo"
+                              document.getElementById("day").innerHTML = days;
+                              document.getElementById("hour").innerHTML = hours;
+                              document.getElementById("minute").innerHTML = minutes;
+                              document.getElementById("second").innerHTML = seconds;
+
+                              // If the count down is over, write some text 
+
+                        }, 1000);
+                  </script>
+                  <div style="width: 100%; position: relative;">
+                        <div class="teaser-content">
+                              <h3 class="teaser_preTitle">Francisco Lindor</h3>
+                              <h2 class="teaser_title">MEET BISPHAERA™</h2>
+                              <div class="teaser_info">
+                                    <div class="teaser_description">
+                                          <div>
+                                                <p>Performance in every environment. Also available in your
+                                                      prescription.</p>
+                                          </div>
+                                    </div>
+                                    <a href="Bisphare.html" class="btn btn-light rounded py-2 px-3"><b>Shop now</b> </a>
+                              </div>
+                        </div>
+                        <video autoplay muted loop id="baseballVideo" class="w-100">
+                              <source src="../shortVideo/na-sphaera-bisphaera-baseball-lindor-hero-d.mp4"
+                                    type="video/mp4">
+                        </video>
+                  </div>
+                  <script title="slowShortVideo">
+                        const video = document.getElementById('baseballVideo');
+                        video.playbackRate = 0.7;
+                  </script>
+                  <section id="PhanBestSeller">
+                        <div class="row fs-2 m-2 hangMuc"><a href="tongSanPham.html" style="text-decoration: none; color: #000;">Best
+                                    Seller</a>
+                        </div>
+                        <div class="row row-cols-sm-1  row-cols-md-3 row-cols-lg-5 g-4">
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span class="first"
+                                                style=" background-image: url(https://callback.owndays.com/images/ranking/first.svg);">1</span>
+
+                                          <img src="../anh/kinh/1fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="1" class="BestSeller nam Ray-Ban XL" style="display: none;">
+                                                </div>
+                                                <h6 class="card-title nameOfProduct">SunSavvy Shades</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>1.999.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>2.400.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>17</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span class="first"
+                                                style=" background-image: url(https://callback.owndays.com/images/ranking/second.svg)">2</span>
+                                          <img src="../anh/kinh/2fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="2" class="BestSeller nam Oakley X" style="display: none;">
+                                                </div>
+                                                <h6 class="card-title nameOfProduct"> UrbanGlimmer Sunglasses</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>400.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>50</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span class="first"
+                                                style=" background-image: url(https://callback.owndays.com/images/ranking/third.svg)">3</span>
+                                          <img src="../anh/kinh/3fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="3" class="BestSeller nu Versace X" style="display: none;">
+                                                </div>
+                                                <h6 class="card-title nameOfProduct">EliteVision Glasses</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>399.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>800.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>50</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span class="second">4</span>
+                                          <img src="../anh/kinh/4fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="4" class="BestSeller nu Parada X" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct">LuxeRay Eyewear</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>2.199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>9.400.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>77</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span class="second">5</span>
+                                          <img src="../anh/kinh/5fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="5" class="BestSeller nam Burberry S" style="display: none;">
+                                                </div>
+                                                <h6 class="card-title nameOfProduct"> CrystalClear Sunnies</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>819.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>1.000.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>18</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row buttonXemThem">
+                              <div class="col text-center m-2">
+                                    <button id="XemThemSanPhamMoi" class="bg-grey border rounded p-1"
+                                          onclick="chuyenTrang('../html/tongSanPham.html?id=PhanBestSeller')">Xem thêm<i
+                                                class="fas fa-angle-down"></i></button>
+                              </div>
+                        </div>
+                  </section>
+
+                  <section id="PhanSanPhamMoi">
+                        <div class="row fs-2 m-2 hangMuc"><a href="tongSanPham.html" style="text-decoration: none; color: #000;">Sản
+                                    Phẩm Mới</a>
+                        </div>
+                        <div class="row row-cols-sm-1  row-cols-md-3 row-cols-lg-5 g-4 my-2">
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/6fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="6" class="New nam Alain_Mikli M" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct"> NovaView Sunglasses</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>369.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>490.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>25</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/7fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="7" class="New nu Ray-Ban L" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct">ShadeMaster Glasses</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>1.111.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>2.123.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>48</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/8fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="8" class="New nu Burberry M" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct"> SunStyle Spectacles</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>3.199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>4.000.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/9fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="9" class="New nu Versace XL" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct"> OceanBreeze Sunglasses</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>899.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>900.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>0</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/10fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="10" class="New nam Alain_Mikli X" style="display: none;"></div>
+                                                <h6 class="card-title nameOfProduct"> UrbanEdge Shades</h6>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>1.199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>5.400.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>78</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="collapse multi-collapse" id="collapsePhanSanPhamMoiPhan1">
+                              <section id="PhanSanPhamMoiPhan1">
+                                    <div class="row row-cols-sm-1  row-cols-md-3 row-cols-lg-5 g-4 my-2">
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="../anh/kinh/12fr.png" class="card-img-top" alt=""
+                                                            loading="lazy">
+                                                      <div class="card-body">
+                                                            <div id="12" class="New nam Alain_Mikli M"
+                                                                  style="display: none;"></div>
+                                                            <h6 class="card-title nameOfProduct"> Skyline Sunnies</h6>
+                                                            <strong
+                                                                  class="price text-danger text-center d-block priceOfProduct">
+                                                                  <span>369.000</span>đ<br>
+                                                                  <span class="price-and-discount">
+                                                                        <label
+                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                              <span>4.990.000</span>đ
+                                                                        </label>
+                                                                        <small class="discount"
+                                                                              style="background-color: pink;">-<span>93</span>%</small>
+                                                                  </span>
+                                                            </strong>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="../anh/kinh/16fr.png" class="card-img-top" alt=""
+                                                            loading="lazy">
+                                                      <div class="card-body">
+                                                            <div id="16" class="New nam Alain_Mikli X"
+                                                                  style="display: none;"></div>
+                                                            <h6 class="card-title nameOfProduct">SunSavant Spectacles
+                                                            </h6>
+                                                            <strong
+                                                                  class="price text-danger text-center d-block priceOfProduct">
+                                                                  <span>2.000.000</span>đ<br>
+                                                                  <span class="price-and-discount">
+                                                                        <label
+                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                              <span>5.400.000</span>đ
+                                                                        </label>
+                                                                        <small class="discount"
+                                                                              style="background-color: pink;">-<span>63</span>%</small>
+                                                                  </span>
+                                                            </strong>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="../anh/kinh/17fr.png" class="card-img-top" alt=""
+                                                            loading="lazy">
+                                                      <div class="card-body">
+                                                            <div id="17" class="New nam Oakley X"
+                                                                  style="display: none;"></div>
+                                                            <h6 class="card-title nameOfProduct">UrbanEclipse Shades
+                                                            </h6>
+                                                            <strong
+                                                                  class="price text-danger text-center d-block priceOfProduct">
+                                                                  <span>219.000</span>đ<br>
+                                                                  <span class="price-and-discount">
+                                                                        <label
+                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                              <span>2.300.000</span>đ
+                                                                        </label>
+                                                                        <small class="discount"
+                                                                              style="background-color: pink;">-<span>90</span>%</small>
+                                                                  </span>
+                                                            </strong>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="../anh/kinh/18fr.png" class="card-img-top" alt=""
+                                                            loading="lazy">
+                                                      <div class="card-body">
+                                                            <div id="18" class="New nam Ray-Ban M"
+                                                                  style="display: none;"></div>
+                                                            <h6 class="card-title nameOfProduct">UnEclipse Shades</h6>
+                                                            <strong
+                                                                  class="price text-danger text-center d-block priceOfProduct">
+                                                                  <span>369.000</span>đ<br>
+                                                                  <span class="price-and-discount">
+                                                                        <label
+                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                              <span>4.990.000</span>đ
+                                                                        </label>
+                                                                        <small class="discount"
+                                                                              style="background-color: pink;">-<span>93</span>%</small>
+                                                                  </span>
+                                                            </strong>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="../anh/kinh/19fr.png" class="card-img-top" alt=""
+                                                            loading="lazy">
+                                                      <div class="card-body">
+                                                            <div id="19" class="New nu Ray-Ban XL"
+                                                                  style="display: none;"></div>
+                                                            <h6 class="card-title nameOfProduct"> VistaVogue Glasses
+                                                            </h6>
+                                                            <strong
+                                                                  class="price text-danger text-center d-block priceOfProduct">
+                                                                  <span>2.111.000</span>đ<br>
+                                                                  <span class="price-and-discount">
+                                                                        <label
+                                                                              class="price-and-old-black text-decoration-line-through text-muted">
+                                                                              <span>2.999.000</span>đ
+                                                                        </label>
+                                                                        <small class="discount"
+                                                                              style="background-color: pink;">-<span>30</span>%</small>
+                                                                  </span>
+                                                            </strong>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                              </section>
+                        </div>
+                        <div class="row buttonXemThem">
+                              <div class="col text-center m-2">
+                                    <button id="XemThemSanPhamMoi" class="bg-grey border rounded p-1"
+                                          onclick="chuyenTrang('../html/tongSanPham.html?id=PhanSanPhamMoi')">Xem thêm<i
+                                                class="fas fa-angle-down"></i></button>
+                              </div>
+                        </div>
+                  </section>
+
+
+                  <div id="Designer" class="mt-4">
+                        <p>Shop by brands</p>
+                        <div class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-5 gap-3 justify-content-around">
+                              <div id="Ray-Ban" class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/ray-ban">
+                                          <img loading="lazy" alt="ray-ban" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/ray-ban_wt_18.png">
+                                    </a>
+                              </div>
+                              <div id="Prada" class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/prada">
+                                          <img loading="lazy" alt="prada" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/prada_bl_18.png">
+                                    </a>
+                              </div>
+                              <div id="Versace " class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/versace">
+                                          <img loading="lazy" alt="versace" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/LOGO-VERSACE.png">
+                                    </a>
+                              </div>
+                              <div id="Oakley" class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/oakley">
+                                          <img loading="lazy" alt="oakley" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/oakley_bl_18.png">
+                                    </a>
+                              </div>
+                              <div id="Gucci" class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/gucci">
+                                          <img loading="lazy" alt="gucci" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/gucci_bl_18.png">
+                                    </a>
+                              </div>
+                              <div id="Burberry" class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/burberry">
+                                          <img loading="lazy" alt="burberry" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/burberry_bl_18.png">
+                                    </a>
+                              </div>
+                              <div id="Dolce&amp;Gabbana " class="col col-sm-1">
+                                    <a href="https://www.sunglasshut.com/us/dolce-and-gabbana">
+                                          <img loading="lazy" alt="dolce-and-gabbana" class="picture__image lazy"
+                                                src="//assets.sunglasshut.com/extra/image/LuxotticaRetail/SGH_brands_logos/dolcegabbana_bl_18.png">
+                                    </a>
+                              </div>
+                              <div class="col col-sm-1">
+                                    <a href="#" class="text-black fs-4"><span
+                                                class="view-all-span text-left grow-0 font-medium underline">View
+                                                all</span></a>
+                              </div>
+
+                        </div>
+
+                  </div>
+            </main>
+      </div>
+      <section id="campaign" class="w-100 my-3 text-center position-relative">
+            <img class="w-100" src="../anh/campaign/campaign-main-banner-pc (1).jpg" alt="" loading="lazy">
+            <div class="position-absolute fw-bolder">
+                  <h1 class=" text-danger">2024 Collection</h1> <br>
+                  <a href="campaign_2024_collection.html" class=" text-danger pe-4">Discover More</a>
+                  <a href="#" class=" text-danger ps-4">Shop to Collection</a>
+            </div>
+      </section>
+      <footer class="footer container-fluid">
+            <div class="container">
+                  <div class="row">
+                        <div class="footer-col col">
+                              <h4>company</h4>
+                              <ul>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">our services</a></li>
+                                    <li><a href="#">privacy policy</a></li>
+                                    <li><a href="#">affiliate program</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>get help</h4>
+                              <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">shipping</a></li>
+                                    <li><a href="#">returns</a></li>
+                                    <li><a href="#">order status</a></li>
+                                    <li><a href="#">payment options</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>Brand</h4>
+                              <ul>
+                                    <li><a href="#">Ray-Ban</a></li>
+                                    <li><a href="#">Oakley</a></li>
+                                    <li><a href="#">Prada</a></li>
+                                    <li><a href="#">ersace</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>follow us</h4>
+                              <div class="social-links">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+          <!-- phần giỏ hàng -->
+    <div class="phanGioHang">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body overflow-scroll">
+              <div class="container">
+              </div>
+          </div>
+          <hr>
+          <div class="offcanvas-footer m-2 p-2">
+              <div class="row justify-content-around">
+                  <p class="col-3">
+                      Tổng tiền:
+                  </p>
+                  <span class="col-8 text-end tongTien"><span>0</span>đ</span>
+              </div>
+              <div class="">
+                  <button id="thanhToanButton" type="button" class="btn btn-primary" onclick="thanhToan()">Thanh toán</button>
+                  <!-- data-bs-toggle="modal" data-bs-target="#payModal" -->
+              </div>
+              <audio id="audioPay">
+                            <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3" type="audio/mpeg">
+                        </audio>
+
+          </div>
+      </div>
+      <!-- thông báo thanh toán -->
+      <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLable" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header text-center" style="background-color: greenyellow;">
+
+                      <div class="d-flex justify-content-center flex-column align-item-center w-100">
+                          <i style="font-size: 8vw;" class="fa-regular fa-circle-check"></i>
+                          <h3>Thành công</h3>
+                      </div>
+
+
+                      <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body text-center">
+                      <h3>Cảm ơn bạn đã mua hàng!</h3>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tiếp tục mua sắm</button>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- thông báo xóa sản phẩm -->
+      <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLable" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header text-center" style="background-color: rgb(254, 78, 78);">
+
+                      <div class="w-100">
+                          <i style="font-size: 6vw;" class="fa-regular fa-trash-can"></i>
+                      </div>
+                      <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body text-center">
+                      <h3>Bạn chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</h3>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Trở lại</button>
+                      <button type="button" class="btn btn-primary" id="xoaSanPhamKhoiGioHangButton">Xóa</button>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/swiper_SanPhamHot.js"></script>
+<script src="../js/thanhDieuHuong.js"></script>
+<script src="../js/gioHang.js"></script>
+<script src="../js/home.js"></script>
+<script>
+      function chuyenTrang(path) {
+            window.location.href = path;
+      }
+</script>
+
+</html>
