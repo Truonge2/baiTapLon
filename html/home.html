@@ -53,10 +53,10 @@
                                     </a>
                               </li>
                               <li class="nav-item px-3">
-                                    <form action="" method="post">
+                                    <form id="searchForm" action="" method="post">
                                           <input type="text" name="search" id="search"
                                                 placeholder="   Tìm kiếm sản phẩm">
-                                          <button type="submit" onclick="goToTongSanPham()"><i class="fa fa-search"></i></button>
+                                          <button id="searchButton"  type="submit" onclick="chuyenTrang('../html/tongSanPham.html?id=PhanBestSeller')"><i class="fa fa-search"></i></button>
                                     </form>
                               </li>
                               <li class="nav-item px-3">
@@ -1270,10 +1270,10 @@
 <script src="../js/thanhDieuHuong.js"></script>
 <script src="../js/gioHang.js"></script>
 <script src="../js/home.js"></script>
-<script>
-      function chuyenTrang(path) {
-            window.location.href = path;
-      }
-</script>
+<!-- <script src="../js/timKiem.js"></script> -->
+<!-- <script>
+
+</script> -->
+
 
 </html>
