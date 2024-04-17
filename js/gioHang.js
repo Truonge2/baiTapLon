@@ -33,7 +33,7 @@ function loadGioHangTuLocal() {
                   <section class="left">
                   <img src="${cartItem.img}" alt="" loading="lazy" >
                   </section>
-                  <div>them từ local</div>
+            
             </div>
             <div class="col-7">
                   <section class="right infoDetails">

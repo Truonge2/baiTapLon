@@ -7,8 +7,9 @@
     <title>Toàn bộ sản phẩm Mắt Kính Việt</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="../anh/logo/sunglasses-logo-png-removebg-preview.png" type="image/icon type">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -19,49 +20,62 @@
 <body>
     <header class="container-fluid">
         <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary p-0">
-            <a href="home.html" class="flex-shrink-0" style="max-width: 15%; overflow: hidden;"> <img src="../anh/logo/sunglasses-logo-png-removebg-preview.png" alt="" loading="lazy" style="width: 100%;"> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-              </button>
+            <a href="home.html" class="flex-shrink-0" style="max-width: 15%; overflow: hidden;"> <img
+                    src="../anh/logo/sunglasses-logo-png-removebg-preview.png" alt="" loading="lazy"
+                    style="width: 100%;"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item px-3">
-                        <a id="trangChuNavbar" class="nav-link active" aria-current="page" href="home.html">Trang chủ</a>
+                        <a id="trangChuNavbar" class="nav-link active" aria-current="page" href="home.html">Trang
+                            chủ</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a id="namCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNam" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Nam
-                              </a>
+                        <a id="namCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNam" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Nam
+                        </a>
                     </li>
                     <li class="nav-item px-3">
-                        <a id="nuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNu" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Nữ
-                              </a>
+                        <a id="nuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseNu" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Nữ
+                        </a>
                     </li>
                     <li class="nav-item px-3">
-                        <a id="thuongHieuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseThuongHieu" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Thương hiệu
-                              </a>
+                        <a id="thuongHieuCollapse" class="btn" data-bs-toggle="collapse" href="#collapseThuongHieu"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Thương hiệu
+                        </a>
                     </li>
                     <li class="nav-item px-3">
-                        <form action="" method="post">
+                        <form id="searchForm">
                             <input type="text" name="search" id="search" placeholder="   Tìm kiếm sản phẩm">
-                            <button type="submit" onclick="goToTongSanPham()"> <i class="fa fa-search"></i></button>
+                            <button id="searchButton" type="submit" style="border: none;"><i
+                                    class="fa fa-search"></i></button>
                         </form>
                     </li>
                     <li class="nav-item px-3">
-                        <a href="#" id="gioHangButton" class="btn py-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightGioHang" aria-controls="offcanvasRightGioHang" onclick="isGioHangEmpty()">
-                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        <a href="#" id="gioHangButton" class="btn py-0 border-0" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightGioHang"
+                            aria-controls="offcanvasRightGioHang" onclick="isGioHangEmpty()">
+                            <i class="fas fa-shopping-cart"></i>
+                            Giỏ hàng
                         </a>
                     </li>
                     <li class="nav-item px-3">
                         <a href="../html/login.html" class="nk-text-login"><i class="far fa-user-circle"></i>
-                              Tài khoản</a></li>
+                            Tài khoản</a>
                     </li>
+
                     <li class="nav-item px-3">
                         <a href="about_us.html">
-                              About Us
-                              <i class="fas fa-info-circle"> </i>
+                            About Us
+                            <i class="fas fa-info-circle"> </i>
                         </a>
                     </li>
                 </ul>
@@ -76,7 +90,8 @@
 
                             <li><a href="tongSanPham.html">Shop All</a></li>
                             <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
-                            <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a></li>
+                            <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                            </li>
                             <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
                         </ul>
                     </div>
@@ -84,18 +99,20 @@
                         <h6><b>Top brand</b></h6><br>
                         <ul>
 
-                            <li><a href="#">Ray-Ban</a></li>
-                            <li><a href="#">Oakley</a></li>
-                            <li><a href="#">Parada</a></li>
+                            <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                            <li><a href="tongSanPham.html">Oakley</a></li>
+                            <li><a href="tongSanPham.html">Parada</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="card col-6">
-                    <a href="#"><img src="../anh/advertise/sgh-ddm-women.png" class="card-img-top" alt="" loading="lazy">
+                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-women.png" class="card-img-top" alt=""
+                            loading="lazy">
 
                     </a>
                     <div class="card-body">
-                        <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                        <p class="card-title">Most-Loved Styles
+                            Discover the best-selling sunglasses we can’t get enough of.</p>
                     </div>
 
 
@@ -103,21 +120,22 @@
                 <div class="col-3">
                     <div class="card">
 
-                        <a href="#">
+                        <a href="tongSanPham.html">
                             <img src="../anh/advertise/sgh-ddm-2.png" class="card-img-top" alt="" loading="lazy">
 
                         </a>
                         <div class="card-body">
-                            <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                            <p class="card-title">Dolce&Gabbana Spring Summer 2024</p>
                         </div>
 
                     </div>
                     <div class="card">
 
-                        <a href="#"><img src="../anh/advertise/sgh-ddm-4.png" class="card-img-top w-100" alt="" loading="lazy">
+                        <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-4.png" class="card-img-top w-100"
+                                alt="" loading="lazy">
                         </a>
                         <div class="card-body">
-                            <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                            <p class="card-title">TREND: Tortoise Remix</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +150,8 @@
 
                             <li><a href="tongSanPham.html">Shop All</a></li>
                             <li><a href="../html/tongSanPham.html?id=PhanBestSeller">Best Seller</a> </li>
-                            <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a></li>
+                            <li><a href="../html/tongSanPham.html?id=PhanSanPhamDiscount">Discount</a>
+                            </li>
                             <li><a href="../html/tongSanPham.html?id=PhanSanPhamMoi">New</a></li>
                         </ul>
                     </div>
@@ -140,18 +159,20 @@
                         <h6> <b>Top brand</b></h6><br>
                         <ul>
 
-                            <li><a href="#">Ray-Ban</a></li>
-                            <li><a href="#">Oakley</a></li>
-                            <li><a href="#">Parada</a></li>
+                            <li><a href="tongSanPham.html">Ray-Ban</a></li>
+                            <li><a href="tongSanPham.html">Oakley</a></li>
+                            <li><a href="tongSanPham.html">Parada</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="card col-6">
-                    <a href="#"><img src="../anh/advertise/sgh-ddm-men.png" class="card-img-top" alt="" loading="lazy">
+                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-men.png" class="card-img-top" alt=""
+                            loading="lazy">
 
                     </a>
                     <div class="card-body">
-                        <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                        <p class="card-title">Most-Loved Styles
+                            Discover the best-selling sunglasses we can’t get enough of.</p>
                     </div>
 
 
@@ -159,21 +180,22 @@
                 <div class="col-3">
                     <div class="card">
 
-                        <a href="#">
+                        <a href="tongSanPham.html">
                             <img src="../anh/advertise/sgh-ddm-2-nam.png" class="card-img-top" alt="" loading="lazy">
 
                         </a>
                         <div class="card-body">
-                            <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                            <p class="card-title">Oakley Sphaera™</p>
                         </div>
 
                     </div>
                     <div class="card">
 
-                        <a href="#"><img src="../anh/advertise/sgh-ddm-3-nam.png" class="card-img-top w-100" alt="" loading="lazy">
+                        <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-3-nam.png"
+                                class="card-img-top w-100" alt="" loading="lazy">
                         </a>
                         <div class="card-body">
-                            <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                            <p class="card-title">collection 2023</p>
                         </div>
                     </div>
                 </div>
@@ -189,33 +211,33 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#">Ray-Ban</a></td>
+                            <td><a href="tongSanPham.html">Ray-Ban</a></td>
                             <td>
                                 <p class="Topbrand">TOP BRAND</p>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#">Oakley</a> </td>
+                            <td><a href="tongSanPham.html">Oakley</a> </td>
                             <td>
                                 <p class="Topbrand">TOP BRAND</p>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#">Versace</a> </td>
+                            <td><a href="tongSanPham.html">Versace</a> </td>
                             <td>
                                 <p class="Topbrand">TOP BRAND</p>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#">Prada</a></td>
+                            <td><a href="tongSanPham.html">Prada</a></td>
 
                         </tr>
                         <tr>
-                            <td><a href="#">Burberry</a></td>
+                            <td><a href="tongSanPham.html">Burberry</a></td>
 
                         </tr>
                         <tr>
-                            <td><a href="#">Alain Mikli</a></td>
+                            <td><a href="tongSanPham.html">Alain Mikli</a></td>
                             <td>
                                 <p class="new" style="background-color: rgb(246, 97, 97);">NEW</p>
                             </td>
@@ -225,17 +247,23 @@
                 </table>
             </div>
             <div class="card col-4">
-                <a href="https://www.owndays.com/vn/vi/news/memorymetal" class="text-center"><img src="../anh/advertise/Qq2WqVvcgJWsWVi82t5DHtdNZeZlcvgehxQRv5dV.pgn.png" class="card-img-top" alt="" loading="lazy">
+                <a href="tongSanPham.html" class="text-center"><img
+                        src="../anh/advertise/Qq2WqVvcgJWsWVi82t5DHtdNZeZlcvgehxQRv5dV.pgn.png" class="card-img-top"
+                        alt="" loading="lazy">
                 </a>
                 <div class="card-body text-center">
-                    <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                    <p class="card-title">Lenny Kravitz x Ray-Ban
+                        Ray-Ban Reverse lens design meets legendary musician and style icon Lenny Kravitz.</p>
                 </div>
             </div>
             <div class="card col-4">
-                <a href="https://www.owndays.com/vn/vi/news/airultem" class="text-center"><img src="../anh/advertise/oXHEJhcxfyiRpKa0YTWfIERIyrpEkba93cIewNMr.png" class="card-img-top" alt="" loading="lazy">
+                <a href="tongSanPham.html" class="text-center"><img
+                        src="../anh/advertise/oXHEJhcxfyiRpKa0YTWfIERIyrpEkba93cIewNMr.png" class="card-img-top" alt=""
+                        loading="lazy">
                 </a>
                 <div class="card-body text-center">
-                    <p class="card-title">Loa Bluetooth JBL Charge 5</p>
+                    <p class="card-title">New In
+                        Fashion-forward shades that are fresh on the scene.</p>
                 </div>
             </div>
 
@@ -246,28 +274,37 @@
         <section class="phanTheLoai">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide  border border-dark border-2 rounded-pill " onclick="scrollToElement('PhanSanPhamDiscount')">
+                    <div class="swiper-slide  border border-dark border-2 rounded-pill "
+                        onclick="scrollToElement('PhanSanPhamDiscount')">
                         <div>
-                            <img aria-label="Go to Discount" src="https://media.sunglasshut.com/cms/resource/image/913490/dashButton1x1/80/80/20be2339a76e8c525714cc0c5972c8dc/CF71708060ED4BE8DF5CB2AB58139B68/sgh-best-sellers.jpg" alt="Go to Discount" class="rounded-circle border border-2 border-white">
+                            <img aria-label="Go to Discount"
+                                src="https://media.sunglasshut.com/cms/resource/image/913490/dashButton1x1/80/80/20be2339a76e8c525714cc0c5972c8dc/CF71708060ED4BE8DF5CB2AB58139B68/sgh-best-sellers.jpg"
+                                alt="Go to Discount" class="rounded-circle border border-2 border-white">
                         </div>
                         <p class="mb-0 ">
                             Discount
                         </p>
 
                     </div>
-                    <div class="swiper-slide  border border-dark border-2 rounded-pill " onclick="scrollToElement('PhanBestSeller')">
+                    <div class="swiper-slide  border border-dark border-2 rounded-pill "
+                        onclick="scrollToElement('PhanBestSeller')">
                         <div>
-                            <img aria-label="Go to Best Sellers" src="https://media.sunglasshut.com/cms/resource/image/1061570/dashButton1x1/80/80/b66977f2253ac70b1db7b378b0ea0de9/D4204D1C074A76E1D9D42DDB38F1475C/dash-women.jpg" alt="Go to Best Sellers" class="rounded-circle border border-2 border-white">
+                            <img aria-label="Go to Best Sellers"
+                                src="https://media.sunglasshut.com/cms/resource/image/1061570/dashButton1x1/80/80/b66977f2253ac70b1db7b378b0ea0de9/D4204D1C074A76E1D9D42DDB38F1475C/dash-women.jpg"
+                                alt="Go to Best Sellers" class="rounded-circle border border-2 border-white">
                         </div>
                         <p class=" mb-0">
                             Best Sellers
                         </p>
 
                     </div>
-                    <div class="swiper-slide  border border-dark border-2 rounded-pill " onclick="scrollToElement('PhanSanPhamMoi')">
+                    <div class="swiper-slide  border border-dark border-2 rounded-pill "
+                        onclick="scrollToElement('PhanSanPhamMoi')">
 
                         <div>
-                            <img aria-label="Go to New In " src="https://media.sunglasshut.com/cms/resource/image/1082202/dashButton1x1/80/80/c18f1607a0eacde68361bc3d3f70b772/8EAD68CE083FC2EB78A13FA8667B02CF/dash-women.jpg" alt="Go to New In " class="rounded-circle border border-2 border-white">
+                            <img aria-label="Go to New In "
+                                src="https://media.sunglasshut.com/cms/resource/image/1082202/dashButton1x1/80/80/c18f1607a0eacde68361bc3d3f70b772/8EAD68CE083FC2EB78A13FA8667B02CF/dash-women.jpg"
+                                alt="Go to New In " class="rounded-circle border border-2 border-white">
                         </div>
                         <p class="mb-0">
                             New In
@@ -277,7 +314,9 @@
                     </div>
                     <div class="swiper-slide  border border-dark border-2 rounded-pill ">
                         <div>
-                            <img aria-label="Go to Men" src="https://media.sunglasshut.com/cms/resource/image/913492/dashButton1x1/80/80/b6ac63248f41a923c4fb72ccf6cd5312/32DFE715A3A77DA33C58C309B6C76FFB/sgh-ontrend-women.jpg" alt="Go to Men" class="rounded-circle border border-2 border-white">
+                            <img aria-label="Go to Men"
+                                src="https://media.sunglasshut.com/cms/resource/image/913492/dashButton1x1/80/80/b6ac63248f41a923c4fb72ccf6cd5312/32DFE715A3A77DA33C58C309B6C76FFB/sgh-ontrend-women.jpg"
+                                alt="Go to Men" class="rounded-circle border border-2 border-white">
                         </div>
                         <p class="mb-0">
                             Men
@@ -286,7 +325,9 @@
                     </div>
                     <div class="swiper-slide  border border-dark border-2 rounded-pill ">
                         <div>
-                            <img aria-label="Go to Women" src="https://media.sunglasshut.com/cms/resource/image/913498/dashButton1x1/80/80/f78d1e5d9c55ae2f5c06f01dd9d9325/B38A3E719D463F83D2E694D0D2FA0403/sgh-all.jpg" alt="Go to Women" class="rounded-circle border border-2 border-white ">
+                            <img aria-label="Go to Women"
+                                src="https://media.sunglasshut.com/cms/resource/image/913498/dashButton1x1/80/80/f78d1e5d9c55ae2f5c06f01dd9d9325/B38A3E719D463F83D2E694D0D2FA0403/sgh-all.jpg"
+                                alt="Go to Women" class="rounded-circle border border-2 border-white ">
                         </div>
                         <p class="mb-0">
                             Women
@@ -299,67 +340,67 @@
         </section>
         <section id="PhanBestSeller">
             <div class="row fs-2 m-2 hangMuc"><a href="#" style="text-decoration: none; color: #000;">Best
-                  Seller</a>
+                    Seller</a>
             </div>
             <div class="row row-cols-sm-1  row-cols-md-3 row-cols-lg-5 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <span class="first" style=" background-image: url(https://callback.owndays.com/images/ranking/first.svg);">1</span>
+                        <span class="first"
+                            style=" background-image: url(https://callback.owndays.com/images/ranking/first.svg);">1</span>
 
                         <img src="" class="card-img-top" alt="" loading="lazy">
                         <div class="card-body">
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <span class="first" style=" background-image: url(https://callback.owndays.com/images/ranking/second.svg)">2</span>
+                        <span class="first"
+                            style=" background-image: url(https://callback.owndays.com/images/ranking/second.svg)">2</span>
                         <img src="" class="card-img-top" alt="" loading="lazy">
                         <div class="card-body">
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <span class="first" style=" background-image: url(https://callback.owndays.com/images/ranking/third.svg)">3</span>
+                        <span class="first"
+                            style=" background-image: url(https://callback.owndays.com/images/ranking/third.svg)">3</span>
                         <img src="" class="card-img-top" alt="" loading="lazy">
                         <div class="card-body">
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -371,15 +412,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                              <span></span>đ<br>
-                              <span class="price-and-discount">
-                                    <label
-                                          class="price-and-old-black text-decoration-line-through text-muted">
-                                          <span></span>đ
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
                                     </label>
                                     <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                              </span>
-                        </strong>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -391,15 +431,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                              <span></span>đ<br>
-                              <span class="price-and-discount">
-                                    <label
-                                          class="price-and-old-black text-decoration-line-through text-muted">
-                                          <span></span>đ
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
                                     </label>
                                     <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                              </span>
-                        </strong>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -407,7 +446,7 @@
         </section> <br>
         <section id="PhanSanPhamMoi">
             <div class="row fs-2 m-2 hangMuc"><a href="#" style="text-decoration: none; color: #000;">Sản
-                  Phẩm Mới</a>
+                    Phẩm Mới</a>
             </div>
             <div class="row row-cols-sm-1  row-cols-md-3 row-cols-lg-5 g-4 my-2">
                 <div class="col">
@@ -417,15 +456,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -436,15 +474,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -455,15 +492,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -474,15 +510,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -493,15 +528,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -516,14 +550,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -535,14 +569,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -554,14 +588,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -573,14 +607,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -592,14 +626,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -611,7 +645,7 @@
             <div class="row buttonXemThem">
                 <div class="col text-center m-2">
                     <button id="XemThemSanPhamMoi" class="btn bg-grey border rounded p-1" type="button">
-                      Xem thêm<i class="fas fa-angle-down"></i>
+                        Xem thêm<i class="fas fa-angle-down"></i>
                     </button>
                 </div>
             </div>
@@ -627,15 +661,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -646,15 +679,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -665,15 +697,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -684,15 +715,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -703,15 +733,14 @@
                             <div id="" class="" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"></h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span></span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span></span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                    </span>
-                              </strong>
+                                <span></span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span></span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span></span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -726,14 +755,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -745,14 +774,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -764,14 +793,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -783,14 +812,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -802,14 +831,14 @@
                                     <div id="" class="" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"></h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span></span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span></span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span></span>%</small>
-                                          </span>
+                                        <span></span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span></span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span></span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -821,7 +850,7 @@
             <div class="row buttonXemThem">
                 <div class="col text-center m-2">
                     <button id="XemThemDiscount" class="btn bg-grey border rounded p-1" type="button">
-                      Xem thêm<i class="fas fa-angle-down"></i>
+                        Xem thêm<i class="fas fa-angle-down"></i>
                     </button>
                 </div>
             </div>
@@ -832,30 +861,34 @@
             <div class="container-fluid bg-light">
                 <div class="fs-3 fw-bolder" id="tieuDeCuaSort">Toàn bộ sản phẩm</div>
                 <!-- ------- -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sapXepCollapse" aria-controls="sapXepCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sapXepCollapse"
+                    aria-controls="sapXepCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse  justify-content-end" id="sapXepCollapse">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sắp Xếp
-              </a>
+                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sắp Xếp
+                            </a>
                             <ul class="dropdown-menu sapXep">
                                 <form action="" id="sapXep">
 
                                     <li class="dropdown-item">
-                                        <input type="radio" id="sapTheoGiaTangDan" name="name" value="sapTheoGiaTangDan">
+                                        <input type="radio" id="sapTheoGiaTangDan" name="name"
+                                            value="sapTheoGiaTangDan">
                                         <label for="sapTheoGiaTangDan"> Giá từ thấp đến cao <i
-                        class="fa-solid fa-arrow-up-wide-short"></i></label>
+                                                class="fa-solid fa-arrow-up-wide-short"></i></label>
 
                                     </li>
 
 
                                     <li class="dropdown-item">
-                                        <input type="radio" id="sapTheoGiaGiamDan" name="name" value="sapTheoGiaGiamDan">
+                                        <input type="radio" id="sapTheoGiaGiamDan" name="name"
+                                            value="sapTheoGiaGiamDan">
                                         <label for="sapTheoGiaGiamDan"> Giá từ cao đến thấp <i
-                        class="fa-solid fa-arrow-down-wide-short"></i></label>
+                                                class="fa-solid fa-arrow-down-wide-short"></i></label>
                                     </li>
 
                                     <li class="dropdown-item">
@@ -868,7 +901,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Bộ Lọc <i class="fa-solid fa-filter"></i></button>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Bộ Lọc <i
+                                    class="fa-solid fa-filter"></i></button>
                         </li>
                     </ul>
                 </div>
@@ -877,7 +912,8 @@
         </nav>
         <!-- phần bộ lọc -->
         <div id="phanBoLoc">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <h2 class="offcanvas-title" id="offcanvasRightLabel">Bộ Lọc</h2>
 
@@ -888,9 +924,10 @@
                     <ul class="menu">
                         <li class="item  my-2">
                             <div class="dropdown thuonghieu">
-                                <a class="btn dropdown-toggle w-100 text-start" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Thương hiệu
-                                    </a>
+                                <a class="btn dropdown-toggle w-100 text-start" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thương hiệu
+                                </a>
 
                                 <ul class="dropdown-menu ps-2">
                                     <form action="">
@@ -917,7 +954,8 @@
                                             <label for="Burberry">Burberry</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="Alain_Mikli" name="Alain_Mikli" value="Alain_Mikli">
+                                            <input type="checkbox" id="Alain_Mikli" name="Alain_Mikli"
+                                                value="Alain_Mikli">
                                             <label for="Alain_Mikli">Alain_Mikli</label>
                                         </li>
 
@@ -927,9 +965,10 @@
                         </li>
                         <li class="item  my-2">
                             <div class="dropdown gioiTinh">
-                                <a class="btn  dropdown-toggle w-100 text-start " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Giới Tính
-                                    </a>
+                                <a class="btn  dropdown-toggle w-100 text-start " href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giới Tính
+                                </a>
                                 <ul class="dropdown-menu ps-2 ">
                                     <form action="">
                                         <li>
@@ -946,9 +985,10 @@
                         </li>
                         <li class="item  my-2">
                             <div class="dropdown gia">
-                                <a class="btn dropdown-toggle w-100 text-start " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Giá
-                                    </a>
+                                <a class="btn dropdown-toggle w-100 text-start " href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giá
+                                </a>
                                 <ul class="dropdown-menu ps-2 ">
                                     <form action="">
                                         <li>
@@ -973,14 +1013,17 @@
                         </li>
                         <li class="item  my-2">
                             <div class="dropdown kichThuoc">
-                                <a class="btn dropdown-toggle w-100 text-start " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Kích Thước
-                                    </a>
+                                <a class="btn dropdown-toggle w-100 text-start " href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kích Thước
+                                </a>
 
                                 <ul class="dropdown-menu ps-2 ">
                                     <li>
-                                        <p>Kích thước của khung được xem là thông tin chức năng, được xác định theo: <br>
-                                            <i>Khoảng cách từ bản lề đến bản lề: chiều rộng của gọng kính được đo từ bên trong kính bắt đầu từ tâm của mỗi bản lề</i>
+                                        <p>Kích thước của khung được xem là thông tin chức năng, được xác định theo:
+                                            <br>
+                                            <i>Khoảng cách từ bản lề đến bản lề: chiều rộng của gọng kính được đo từ bên
+                                                trong kính bắt đầu từ tâm của mỗi bản lề</i>
                                         </p>
                                     </li>
                                     <form action="" id="kichThuoc">
@@ -1023,15 +1066,14 @@
                             <div id="1" class="BestSeller nam Ray-Ban XL" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct">SunSavvy Shades</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>1.999.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>2.400.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>1.999.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>2.400.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1042,15 +1084,14 @@
                             <div id="2" class="BestSeller nam Oakley X" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"> UrbanGlimmer Sunglasses</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>199.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>400.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>199.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>400.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1061,15 +1102,14 @@
                             <div id="3" class="BestSeller nu Versace X" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct">EliteVision Glasses</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>399.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>800.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>399.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>800.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1080,15 +1120,14 @@
                             <div id="4" class="BestSeller nu Parada X" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct">LuxeRay Eyewear</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>2.199.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>9.400.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>2.199.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>9.400.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1099,15 +1138,14 @@
                             <div id="5" class="BestSeller nam Burberry S" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"> CrystalClear Sunnies</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>819.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>1.000.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>819.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>1.000.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1118,15 +1156,14 @@
                             <div id="6" class="New nam Alain_Mikli M" style="display: none;"></div>
                             <h6 class="card-title nameOfProduct"> NovaView Sunglasses</h6>
                             <strong class="price text-danger text-center d-block priceOfProduct">
-                                    <span>369.000</span>đ<br>
-                                    <span class="price-and-discount">
-                                          <label
-                                                class="price-and-old-black text-decoration-line-through text-muted">
-                                                <span>490.000</span>đ
-                                          </label>
-                                          <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                    </span>
-                              </strong>
+                                <span>369.000</span>đ<br>
+                                <span class="price-and-discount">
+                                    <label class="price-and-old-black text-decoration-line-through text-muted">
+                                        <span>490.000</span>đ
+                                    </label>
+                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
+                                </span>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -1141,14 +1178,14 @@
                                     <div id="7" class="New nu Ray-Ban L" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">ShadeMaster Glasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>1.111.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>2.123.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>1.111.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>2.123.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1160,14 +1197,14 @@
                                     <div id="8" class="New nu Burberry M" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> SunStyle Spectacles</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>3.199.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>4.000.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>3.199.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>4.000.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1179,14 +1216,14 @@
                                     <div id="9" class="New nu Versace XL" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> OceanBreeze Sunglasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>899.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>900.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>899.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>900.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1198,33 +1235,34 @@
                                     <div id="10" class="New nam Alain_Mikli X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> UrbanEdge Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>1.199.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>5.400.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>1.199.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>5.400.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="../anh/kinh/11fr.png" class="card-img-top" alt="" loading="lazy" style="height: 50%;">
+                                <img src="../anh/kinh/11fr.png" class="card-img-top" alt="" loading="lazy"
+                                    style="height: 50%;">
                                 <div class="card-body">
                                     <div id="11" class="Discount nam Oakley X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> PrismGlow Glasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>119.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>1.000.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>119.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>1.000.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1236,14 +1274,14 @@
                                     <div id="12" class="New nam Alain_Mikli M" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> Skyline Sunnies</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>369.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>4.990.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>369.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>4.990.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1257,14 +1295,14 @@
                                     <div id="13" class="Discount nu Ray-Ban L" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> SolarFlare Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>11.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>2.123.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>11.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>2.123.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1276,14 +1314,14 @@
                                     <div id="14" class="Discount nam Versace L" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> VisionVista Sunglasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>99.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>4.060.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>99.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>4.060.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1295,14 +1333,14 @@
                                     <div id="15" class="Discount nu Parada XL" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">Vissta Sunglasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>189.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>999.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>189.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>999.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1314,14 +1352,14 @@
                                     <div id="16" class="New nam Alain_Mikli X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">SunSavant Spectacles</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>2.000.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>5.400.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>2.000.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>5.400.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1333,14 +1371,14 @@
                                     <div id="17" class="New nam Oakley X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">UrbanEclipse Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>219.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>2.300.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>219.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>2.300.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1352,14 +1390,14 @@
                                     <div id="18" class="New nam Ray-Ban M" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">UnEclipse Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>369.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>4.990.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>369.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>4.990.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1377,14 +1415,14 @@
                                     <div id="19" class="New nu Ray-Ban XL" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> VistaVogue Glasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>2.111.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>2.999.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>2.111.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>2.999.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1396,14 +1434,14 @@
                                     <div id="20" class="New nu Oakley X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">ZenithZest Sunnies</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>2.179.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>4.050.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>2.179.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>4.050.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1415,14 +1453,14 @@
                                     <div id="21" class="Discount nam Versace S" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> HorizonGaze Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>239.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>900.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>239.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>900.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1434,14 +1472,14 @@
                                     <div id="22" class="Discount nam Parada L" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct"> HorizonGaze Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>499.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>1.400.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>499.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>1.400.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1453,14 +1491,14 @@
                                     <div id="23" class="Discount nam Burberry M" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">HnGaze Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>619.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>1.000.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>619.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>1.000.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1472,14 +1510,14 @@
                                     <div id="24" class="Discount nu Alain_Mikli X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">ShadeSavvy Spectacles</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>369.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>990.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>369.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>990.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1493,14 +1531,14 @@
                                     <div id="25" class="Discount nu Ray-Ban XL" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">SolarGlow Sunnies</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>211.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>889.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>211.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>889.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1512,14 +1550,14 @@
                                     <div id="26" class="nu Oakley X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">UrbanRays Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>789.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>9.050.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>789.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>9.050.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1531,14 +1569,14 @@
                                     <div id="27" class="Discount nam Versace S" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">CrystalClear Vision Glasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>639.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>1.200.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>639.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>1.200.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1550,14 +1588,14 @@
                                     <div id="28" class="nam Parada L" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">SunBreeze Sunglasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>9.999.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>11.498.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>9.999.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>11.498.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1569,14 +1607,14 @@
                                     <div id="29" class=" nam Burberry M" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">ShineMaster Shades</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>519.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>3.123.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>519.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>3.123.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1588,14 +1626,14 @@
                                     <div id="30" class="nu Alain_Mikli X" style="display: none;"></div>
                                     <h6 class="card-title nameOfProduct">PrismPerfect Glasses</h6>
                                     <strong class="price text-danger text-center d-block priceOfProduct">
-                                          <span>8.000.000</span>đ<br>
-                                          <span class="price-and-discount">
-                                                <label
-                                                      class="price-and-old-black text-decoration-line-through text-muted">
-                                                      <span>99.000.000</span>đ
-                                                </label>
-                                                <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                          </span>
+                                        <span>8.000.000</span>đ<br>
+                                        <span class="price-and-discount">
+                                            <label class="price-and-old-black text-decoration-line-through text-muted">
+                                                <span>99.000.000</span>đ
+                                            </label>
+                                            <small class="discount"
+                                                style="background-color: pink;">-<span>20</span>%</small>
+                                        </span>
                                     </strong>
                                 </div>
                             </div>
@@ -1606,7 +1644,7 @@
             <div class="row buttonXemThem">
                 <div class="col text-center m-2">
                     <button id="XemThemToanBoSanPham" class="btn bg-grey border rounded p-1" type="button">
-                      Xem thêm<i class="fas fa-angle-down"></i>
+                        Xem thêm<i class="fas fa-angle-down"></i>
                     </button>
                 </div>
             </div>
@@ -1658,7 +1696,8 @@
     </footer>
     <!-- phần giỏ hàng -->
     <div class="phanGioHang">
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang"
+            aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <h3 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1676,12 +1715,13 @@
                     <span class="col-8 text-end tongTien"><span>0</span>đ</span>
                 </div>
                 <div class="">
-                    <button id="thanhToanButton" type="button" class="btn btn-primary" onclick="thanhToan()">Thanh toán</button>
+                    <button id="thanhToanButton" type="button" class="btn btn-primary" onclick="thanhToan()">Thanh
+                        toán</button>
                     <!-- data-bs-toggle="modal" data-bs-target="#payModal" -->
                 </div>
                 <audio id="audioPay">
-                              <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3" type="audio/mpeg">
-                          </audio>
+                    <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3" type="audio/mpeg">
+                </audio>
 
             </div>
         </div>
@@ -1697,7 +1737,8 @@
                         </div>
 
 
-                        <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body text-center">
@@ -1720,7 +1761,8 @@
                         <div class="w-100">
                             <i style="font-size: 6vw;" class="fa-regular fa-trash-can"></i>
                         </div>
-                        <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body text-center">
@@ -1760,7 +1802,7 @@
         let priceOfProduct = price.querySelector('span').textContent;
         let priceAndOld = price.querySelector('.price-and-old-black span').textContent;
         let discount = price.querySelector('.discount span');
-        
+
         let noDots1 = priceOfProduct.replace(/\./g, '');
         let noDots2 = priceAndOld.replace(/\./g, '');
 

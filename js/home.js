@@ -79,34 +79,17 @@ function luuLocalStoragCuaChiTiet(card) {
     localStorage.setItem('chiTietSP', JSON.stringify(chiTietSP));
     return true;
 }
-function search(){
-    let input = document.getElementById('searchForm').querySelector('input').value;
 
+
+    // let input = document.getElementById('searchForm');
     let search =  document.getElementById('searchButton');
-    if(search && input){
-
-        console.log('search');
-        search.addEventListener('click', function(e){
-            
-                let arrayCard = document.querySelectorAll('.nameOfProduct');
-                arrayCard.forEach(element => {
-                    console.log(element.textContent);
-                    if(element.textContent==input){
-                            let parentElement = element.parentElement;
-                            let id = parentElement.firstElementChild.getAttribute('id');
-                            if(id){
-                                let path= `../html/tongSanPham.html?id=${id}`;
-                                chuyenTrang(path.textContent); 
-                            }
-                               
-                            else
-                                chuyenTrang('../html/tongSanPham.html');
-                                
-                    }
-                });
-        })
-    }
+    if(search){
+            search.addEventListener('click', function(e){
+                e.preventDefault();
+                chuyenTrang('../html/tongSanPham.html');
+            });
 }
+
 function chuyenTrang(path) {
     window.location.href = path;
 }

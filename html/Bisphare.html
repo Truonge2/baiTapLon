@@ -16,8 +16,8 @@
       <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
       <link rel="stylesheet" href="../css/Bisphare.css">
       <link rel="stylesheet" href="../css/home.css">
-   
-     
+
+
 </head>
 
 <body>
@@ -57,10 +57,11 @@
                                     </a>
                               </li>
                               <li class="nav-item px-3">
-                                    <form action="" method="post">
+                                    <form id="searchForm">
                                           <input type="text" name="search" id="search"
-                                                placeholder="   Tìm kiếm sản phẩm" required>
-                                          <button type="submit" onclick="goToTongSanPham()"><i class="fa fa-search"></i></button>
+                                                placeholder="   Tìm kiếm sản phẩm">
+                                          <button id="searchButton" type="submit" style="border: none;"><i
+                                                      class="fa fa-search"></i></button>
                                     </form>
                               </li>
                               <li class="nav-item px-3">
@@ -76,7 +77,7 @@
                                                 class="far fa-user-circle"></i>
                                           Tài khoản</a>
                               </li>
-                              </li>
+
                               <li class="nav-item px-3">
                                     <a href="about_us.html">
                                           About Us
@@ -111,8 +112,8 @@
                               </div>
                         </div>
                         <div class="card col-6">
-                              <a href="#"><img src="../anh/advertise/sgh-ddm-women.png" class="card-img-top" alt=""
-                                          loading="lazy">
+                              <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-women.png"
+                                          class="card-img-top" alt="" loading="lazy">
 
                               </a>
                               <div class="card-body">
@@ -125,7 +126,7 @@
                         <div class="col-3">
                               <div class="card">
 
-                                    <a href="#">
+                                    <a href="tongSanPham.html">
                                           <img src="../anh/advertise/sgh-ddm-2.png" class="card-img-top" alt=""
                                                 loading="lazy">
 
@@ -137,8 +138,8 @@
                               </div>
                               <div class="card">
 
-                                    <a href="#"><img src="../anh/advertise/sgh-ddm-4.png" class="card-img-top w-100"
-                                                alt="" loading="lazy">
+                                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-4.png"
+                                                class="card-img-top w-100" alt="" loading="lazy">
                                     </a>
                                     <div class="card-body">
                                           <p class="card-title">TREND: Tortoise Remix</p>
@@ -172,8 +173,8 @@
                               </div>
                         </div>
                         <div class="card col-6">
-                              <a href="#"><img src="../anh/advertise/sgh-ddm-men.png" class="card-img-top" alt=""
-                                          loading="lazy">
+                              <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-men.png"
+                                          class="card-img-top" alt="" loading="lazy">
 
                               </a>
                               <div class="card-body">
@@ -186,7 +187,7 @@
                         <div class="col-3">
                               <div class="card">
 
-                                    <a href="#">
+                                    <a href="tongSanPham.html">
                                           <img src="../anh/advertise/sgh-ddm-2-nam.png" class="card-img-top" alt=""
                                                 loading="lazy">
 
@@ -198,8 +199,8 @@
                               </div>
                               <div class="card">
 
-                                    <a href="#"><img src="../anh/advertise/sgh-ddm-3-nam.png" class="card-img-top w-100"
-                                                alt="" loading="lazy">
+                                    <a href="tongSanPham.html"><img src="../anh/advertise/sgh-ddm-3-nam.png"
+                                                class="card-img-top w-100" alt="" loading="lazy">
                                     </a>
                                     <div class="card-body">
                                           <p class="card-title">collection 2023</p>
@@ -254,17 +255,18 @@
                         </table>
                   </div>
                   <div class="card col-4">
-                        <a href="#" class="text-center"><img
+                        <a href="tongSanPham.html" class="text-center"><img
                                     src="../anh/advertise/Qq2WqVvcgJWsWVi82t5DHtdNZeZlcvgehxQRv5dV.pgn.png"
                                     class="card-img-top" alt="" loading="lazy">
                         </a>
                         <div class="card-body text-center">
                               <p class="card-title">Lenny Kravitz x Ray-Ban
-                                    Ray-Ban Reverse lens design meets legendary musician and style icon Lenny Kravitz.</p>
+                                    Ray-Ban Reverse lens design meets legendary musician and style icon Lenny Kravitz.
+                              </p>
                         </div>
                   </div>
                   <div class="card col-4">
-                        <a href="#" class="text-center"><img
+                        <a href="tongSanPham.html" class="text-center"><img
                                     src="../anh/advertise/oXHEJhcxfyiRpKa0YTWfIERIyrpEkba93cIewNMr.png"
                                     class="card-img-top" alt="" loading="lazy">
                         </a>
@@ -276,153 +278,8 @@
 
             </div>
       </header>
-  <nav class="teaser" style="width: 100%; position: relative;" >
-      <div class="teaser-content">
-            <h2 class="teaser_title">ZONE IN</h2>
-            <div class="teaser_info">
-                  <div class="teaser_description">
-                        <div>
-                              <p> Kylian Mbappé in Latch™ Panel.</p>
-                        </div>
-                  </div>
-            </div>
-      </div>
-      <video autoplay muted loop id="baseballVideo" class="w-100">
-            <source src="../shortVideo/ww-latch-panel-launch-hero-d.mp4"
-                  type="video/mp4">
-      </video>
-  </nav>
-  <script title="slowShortVideo">
-    const video = document.getElementById('baseballVideo');
-    video.playbackRate = 0.6;
-  </script>
-  <main>
-      <div class="container-fluid product">
-
-            <div class="swiper-container">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/4fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="4" class="BestSeller nu Parada X" style="display: none;"></div>
-                                        <a href="tongSanPham.html"><h6 class="card-title nameOfProduct">LuxeRay Eyewear</h6></a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                                <span>2.199.000</span>đ<br>
-                                                <span class="price-and-discount">
-                                                      <label
-                                                            class="price-and-old-black text-decoration-line-through text-muted">
-                                                            <span>9.400.000</span>đ
-                                                      </label>
-                                                      <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                                </span>
-                                          </strong>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/5fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="5" class="BestSeller nam Burberry S" style="display: none;"></div>
-                                        <a href="tongSanPham.html"><h6 class="card-title nameOfProduct"> CrystalClear Sunnies</h6></a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                                <span>819.000</span>đ<br>
-                                                <span class="price-and-discount">
-                                                      <label
-                                                            class="price-and-old-black text-decoration-line-through text-muted">
-                                                            <span>1.000.000</span>đ
-                                                      </label>
-                                                      <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                                </span>
-                                          </strong>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/6fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="6" class="New nam Alain_Mikli M" style="display: none;"></div>
-                                        <a href="tongSanPham.html"><h6 class="card-title nameOfProduct"> NovaView Sunglasses</h6></a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                                <span>369.000</span>đ<br>
-                                                <span class="price-and-discount">
-                                                      <label
-                                                            class="price-and-old-black text-decoration-line-through text-muted">
-                                                            <span>490.000</span>đ
-                                                      </label>
-                                                      <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                                </span>
-                                          </strong>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/7fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="7" class="New nu Ray-Ban L" style="display: none;"></div>
-                                        <a href="tongSanPham.html"><h6 class="card-title nameOfProduct">ShadeMaster Glasses</h6></a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                              <span>1.111.000</span>đ<br>
-                                              <span class="price-and-discount">
-                                                    <label
-                                                          class="price-and-old-black text-decoration-line-through text-muted">
-                                                          <span>2.123.000</span>đ
-                                                    </label>
-                                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                              </span>
-                                        </strong>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/8fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="8" class="New nu Burberry M" style="display: none;"></div>
-                                        <a href="tongSanPham.html"><h6 class="card-title nameOfProduct"> SunStyle Spectacles</h6></a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                              <span>3.199.000</span>đ<br>
-                                              <span class="price-and-discount">
-                                                    <label
-                                                          class="price-and-old-black text-decoration-line-through text-muted">
-                                                          <span>4.000.000</span>đ
-                                                    </label>
-                                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                              </span>
-                                        </strong>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="card h-100">
-                                    <img src="../anh/kinh/9fr.png" class="card-img-top" alt="" loading="lazy">
-                                    <div class="card-body">
-                                        <div id="9" class="New nu Versace XL" style="display: none;"></div>
-                                        <a href="tongSanPham.html"> <h6 class="card-title nameOfProduct"> OceanBreeze Sunglasses</h6> </a>
-                                        <strong class="price text-danger text-center d-block priceOfProduct">
-                                              <span>899.000</span>đ<br>
-                                              <span class="price-and-discount">
-                                                    <label
-                                                          class="price-and-old-black text-decoration-line-through text-muted">
-                                                          <span>900.000</span>đ
-                                                    </label>
-                                                    <small class="discount" style="background-color: pink;">-<span>20</span>%</small>
-                                              </span>
-                                        </strong>
-                                    </div>
-                                </div>
-                  </div>
-            </div>
-      </div>
-     
-
-      <div class="row justify-content-center my-4 position-relative" >
-            <div class="teaser-content position-absolute" style="bottom:10%; left:7% ">
+      <nav class="teaser" style="width: 100%; position: relative;">
+            <div class="teaser-content">
                   <h2 class="teaser_title">ZONE IN</h2>
                   <div class="teaser_info">
                         <div class="teaser_description">
@@ -432,249 +289,440 @@
                         </div>
                   </div>
             </div>
-            <img src="../anh/advertise/d-latch-panel-tiny.jpg" alt="" loading="lazy" style="width: 90%;" >
-      </div>     
-      <section class="productAdv">
-            <div class="row row-cols-sm-1  row-cols-md-2 row-cols-lg-4 g-4 mx-3">
-                  <div class="col">
-                        <div class="card h-100">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>       
-                              <img src="../anh/kinh/Bisphare/0OO9403__940304__P21__noshad__adv.png" class="card-img-top"
-                                    alt="" loading="lazy">
+            <video autoplay muted loop id="baseballVideo" class="w-100">
+                  <source src="../shortVideo/ww-latch-panel-launch-hero-d.mp4" type="video/mp4">
+            </video>
+      </nav>
+      <script title="slowShortVideo">
+            const video = document.getElementById('baseballVideo');
+            video.playbackRate = 0.6;
+      </script>
+      <main>
+            <div class="container-fluid product">
 
-                              <div class="card-body">
-                                    <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
-
+                  <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/4fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="4" class="BestSeller nu Parada X" style="display: none;"></div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct">LuxeRay Eyewear</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>2.199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>9.400.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/5fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="5" class="BestSeller nam Burberry S" style="display: none;">
+                                                </div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct"> CrystalClear Sunnies</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>819.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>1.000.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/6fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="6" class="New nam Alain_Mikli M" style="display: none;"></div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct"> NovaView Sunglasses</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>369.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>490.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/7fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="7" class="New nu Ray-Ban L" style="display: none;"></div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct">ShadeMaster Glasses</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>1.111.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>2.123.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/8fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="8" class="New nu Burberry M" style="display: none;"></div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct"> SunStyle Spectacles</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>3.199.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>4.000.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                    <div class="card h-100">
+                                          <img src="../anh/kinh/9fr.png" class="card-img-top" alt="" loading="lazy">
+                                          <div class="card-body">
+                                                <div id="9" class="New nu Versace XL" style="display: none;"></div>
+                                                <a href="tongSanPham.html">
+                                                      <h6 class="card-title nameOfProduct"> OceanBreeze Sunglasses</h6>
+                                                </a>
+                                                <strong class="price text-danger text-center d-block priceOfProduct">
+                                                      <span>899.000</span>đ<br>
+                                                      <span class="price-and-discount">
+                                                            <label
+                                                                  class="price-and-old-black text-decoration-line-through text-muted">
+                                                                  <span>900.000</span>đ
+                                                            </label>
+                                                            <small class="discount"
+                                                                  style="background-color: pink;">-<span>20</span>%</small>
+                                                      </span>
+                                                </strong>
+                                          </div>
+                                    </div>
                               </div>
                         </div>
                   </div>
-                  <div class="col">
-                        <div class="card h-100">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>       
-                              <img src="../anh/kinh/Bisphare/0OO9403__940308__P21__noshad__adv.png" class="card-img-top"
-                                    alt="" loading="lazy">
 
-                              <div class="card-body">
-                                    <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
 
+                  <div class="row justify-content-center my-4 position-relative">
+                        <div class="teaser-content position-absolute" style="bottom:10%; left:7% ">
+                              <h2 class="teaser_title">ZONE IN</h2>
+                              <div class="teaser_info">
+                                    <div class="teaser_description">
+                                          <div>
+                                                <p> Kylian Mbappé in Latch™ Panel.</p>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <img src="../anh/advertise/d-latch-panel-tiny.jpg" alt="" loading="lazy" style="width: 90%;">
+                  </div>
+                  <section class="productAdv">
+                        <div class="row row-cols-sm-1  row-cols-md-2 row-cols-lg-4 g-4 mx-3">
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <img src="../anh/kinh/Bisphare/0OO9403__940304__P21__noshad__adv.png"
+                                                class="card-img-top" alt="" loading="lazy">
+
+                                          <div class="card-body">
+                                                <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
+
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <img src="../anh/kinh/Bisphare/0OO9403__940308__P21__noshad__adv.png"
+                                                class="card-img-top" alt="" loading="lazy">
+
+                                          <div class="card-body">
+                                                <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
+
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <img src="../anh/kinh/Bisphare/0OO9403__940309__P21__noshad__adv.png"
+                                                class="card-img-top" alt="" loading="lazy">
+
+                                          <div class="card-body">
+                                                <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
+
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="card h-100">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <img src="../anh/kinh/Bisphare/0OO9403__940311__P21__noshad__adv.png"
+                                                class="card-img-top" alt="" loading="lazy">
+
+                                          <div class="card-body">
+                                                <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
+
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                  </section>
+
+
+                  <section class="text-center"
+                        style="width: 60%; margin: auto; color: rgb(158, 158, 158); padding:3vw 0;">
+                        <h1>OAKLEY LATCH PANEL SUNGLASSES</h1>
+                        <p class="m-0">Experience urban sophistication and athletic excellence with Oakley Latch Panel.
+                              Combining sport and street style, it features Shield Lenses, Removable Side Shields, and
+                              Prizm™ Lens Technology for unrivaled clarity. The full-rim design with a bold statement
+                              Latch™ hinge redefines eyewear storage. Slide on the removable side shields for focused
+                              vision, and thin temples ensure a snug fit under any hat. With a removable leash for
+                              security, embark on versatile adventures with confidence. Elevate your visual experience
+                              with Prizm™ Lens Technology and stand out in any setting. Choose Oakley Latch Panel for
+                              unparalleled style and performance.</p>
+                  </section>
+
+                  <div class="dropdown m-auto" style="width: 70%;">
+                        <button class="btn btn-secondary dropdown-toggle w-100 fw-bolder" type="button"
+                              id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                              FEATURES & TECHNOLOGY
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+
+                              <li class="dropdown-item">
+                                    <div class="row">
+                                          <img class="col-sm-2 col-md-3"
+                                                src="../anh/kinh/Bisphare/sunglass-impact-protection_46994_jpg_picture.png"
+                                                alt="" loading="lazy">
+                                          <div class="col-sm-6 col-md-8 p-3">
+                                                <strong style="font-size: 1.5vw; font-weight: bold;">IMPACT PROTECTION
+                                                </strong><br>
+                                                <p style="text-wrap: wrap; font-size: 1.1vw">Oakley lenses are designed
+                                                      and tested under extreme high mass and high velocity circumstances
+                                                      to ensure uncompromising protection across a wide range of
+                                                      demanding conditions.</p>
+                                          </div>
+                                    </div>
+                              </li>
+
+                              <li>
+                                    <hr class="dropdown-divider">
+                              </li>
+                              <li class="dropdown-item">
+                                    <div class="row">
+
+                                          <img class="col-sm-2 col-md-3"
+                                                src="../anh/kinh/Bisphare/910000000057_puck.png" alt="" loading="lazy">
+                                          <div class="col-sm-6 col-md-8 p-3">
+                                                <strong style="font-size: 1.5vw; font-weight: bold;">PRIZM GOLF
+                                                </strong><br>
+
+                                                <p style="text-wrap: wrap; font-size: 1.1vw">
+                                                      LIGHT TRANSMISSION: 30% <br>
+                                                      LIGHT CONDITIONS: MEDIUM LIGHT <br>
+                                                      BASE LENS COLOR: ROSE <br>
+                                                      INFORMATION NOTICE: 2</p>
+                                          </div>
+
+                                    </div>
+                              </li>
+
+                        </ul>
+                  </div>
+
+      </main>
+      <footer class="footer container-fluid m-0">
+            <div class="container">
+                  <div class="row">
+                        <div class="footer-col col">
+                              <h4>company</h4>
+                              <ul>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">our services</a></li>
+                                    <li><a href="#">privacy policy</a></li>
+                                    <li><a href="#">affiliate program</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>get help</h4>
+                              <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">shipping</a></li>
+                                    <li><a href="#">returns</a></li>
+                                    <li><a href="#">order status</a></li>
+                                    <li><a href="#">payment options</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>Brand</h4>
+                              <ul>
+                                    <li><a href="#">Ray-Ban</a></li>
+                                    <li><a href="#">Oakley</a></li>
+                                    <li><a href="#">Prada</a></li>
+                                    <li><a href="#">ersace</a></li>
+                              </ul>
+                        </div>
+                        <div class="footer-col col">
+                              <h4>follow us</h4>
+                              <div class="social-links">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                               </div>
                         </div>
                   </div>
-                  <div class="col">
-                        <div class="card h-100">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>       
-                              <img src="../anh/kinh/Bisphare/0OO9403__940309__P21__noshad__adv.png" class="card-img-top"
-                                    alt="" loading="lazy">
-
-                              <div class="card-body">
-                                    <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
-
-                              </div>
-                        </div>
-                  </div>
-                  <div class="col">
-                        <div class="card h-100">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>       
-                              <img src="../anh/kinh/Bisphare/0OO9403__940311__P21__noshad__adv.png" class="card-img-top"
-                                    alt="" loading="lazy">
-
-                              <div class="card-body">
-                                    <h3 class="card-title"><a href="tongSanPham.html">Sphaera™</a></h3>
-
-                              </div>
-                        </div>
-                  </div>
-                
             </div>
-      </section>
-    
-
-      <section class="text-center" style="width: 60%; margin: auto; color: rgb(158, 158, 158); padding:3vw 0;">
-            <h1>OAKLEY LATCH PANEL SUNGLASSES</h1>
-            <p class="m-0">Experience urban sophistication and athletic excellence with Oakley Latch Panel. Combining sport and street style, it features Shield Lenses, Removable Side Shields, and Prizm™ Lens Technology for unrivaled clarity. The full-rim design with a bold statement Latch™ hinge redefines eyewear storage. Slide on the removable side shields for focused vision, and thin temples ensure a snug fit under any hat. With a removable leash for security, embark on versatile adventures with confidence. Elevate your visual experience with Prizm™ Lens Technology and stand out in any setting. Choose Oakley Latch Panel for unparalleled style and performance.</p>
-      </section>
-     
-      <div class="dropdown m-auto" style="width: 70%;">
-            <button class="btn btn-secondary dropdown-toggle w-100 fw-bolder" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                  FEATURES & TECHNOLOGY
-            </button>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-             
-                    <li class="dropdown-item">
-                        <div class="row">
-                              <img class="col-sm-2 col-md-3" src="../anh/kinh/Bisphare/sunglass-impact-protection_46994_jpg_picture.png" alt="" loading="lazy">
-                              <div class="col-sm-6 col-md-8 p-3">
-                                    <strong style="font-size: 1.5vw; font-weight: bold;">IMPACT PROTECTION </strong><br>
-                                    <p style="text-wrap: wrap; font-size: 1.1vw">Oakley lenses are designed and tested under extreme high mass and high velocity circumstances to ensure uncompromising protection across a wide range of demanding conditions.</p>
-                              </div>
+      </footer>
+      <!-- phần giỏ hàng -->
+      <div class="phanGioHang">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body overflow-scroll">
+                        <div class="container">
                         </div>
-                    </li>
-
-                    <li><hr class="dropdown-divider"></li>
-                    <li class="dropdown-item">
-                        <div class="row"> 
-                              
-                              <img class="col-sm-2 col-md-3" src="../anh/kinh/Bisphare/910000000057_puck.png" alt="" loading="lazy">
-                              <div class="col-sm-6 col-md-8 p-3">
-                                    <strong style="font-size: 1.5vw; font-weight: bold;">PRIZM GOLF </strong><br>
-                                    
-                                    <p style="text-wrap: wrap; font-size: 1.1vw">
-                                          LIGHT TRANSMISSION: 30% <br>
-                                          LIGHT CONDITIONS: MEDIUM LIGHT <br>
-                                          BASE LENS COLOR: ROSE <br>
-                                          INFORMATION NOTICE: 2</p>
-                              </div>
-                             
+                  </div>
+                  <hr>
+                  <div class="offcanvas-footer m-2 p-2">
+                        <div class="row justify-content-around">
+                              <p class="col-3">
+                                    Tổng tiền:
+                              </p>
+                              <span class="col-8 text-end tongTien"><span>0</span>đ</span>
                         </div>
-                  </li>
-      
-                  </ul>
-            </div>
-   
-  </main>
-  <footer class="footer container-fluid m-0">
-      <div class="container">
-       <div class="row">
-         <div class="footer-col col">
-           <h4>company</h4>
-           <ul>
-             <li><a href="#">about us</a></li>
-             <li><a href="#">our services</a></li>
-             <li><a href="#">privacy policy</a></li>
-             <li><a href="#">affiliate program</a></li>
-           </ul>
-         </div>
-         <div class="footer-col col">
-           <h4>get help</h4>
-           <ul>
-             <li><a href="#">FAQ</a></li>
-             <li><a href="#">shipping</a></li>
-             <li><a href="#">returns</a></li>
-             <li><a href="#">order status</a></li>
-             <li><a href="#">payment options</a></li>
-           </ul>
-         </div>
-         <div class="footer-col col">
-           <h4>Brand</h4>
-           <ul>
-             <li><a href="#">Ray-Ban</a></li>
-             <li><a href="#">Oakley</a></li>
-             <li><a href="#">Prada</a></li>
-             <li><a href="#">ersace</a></li>
-           </ul>
-         </div>
-         <div class="footer-col col">
-           <h4>follow us</h4>
-           <div class="social-links">
-             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-           </div>
-         </div>
-       </div>
-      </div>
-   </footer>
-       <!-- phần giỏ hàng -->
-       <div class="phanGioHang">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightGioHang" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h3 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body overflow-scroll">
-                    <div class="container">
-                    </div>
-                </div>
-                <hr>
-                <div class="offcanvas-footer m-2 p-2">
-                    <div class="row justify-content-around">
-                        <p class="col-3">
-                            Tổng tiền:
-                        </p>
-                        <span class="col-8 text-end tongTien"><span>0</span>đ</span>
-                    </div>
-                    <div class="">
-                        <button id="thanhToanButton" type="button" class="btn btn-primary" onclick="thanhToan()">Thanh toán</button>
-                        <!-- data-bs-toggle="modal" data-bs-target="#payModal" -->
-                    </div>
-                    <audio id="audioPay">
-                                  <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3" type="audio/mpeg">
-                              </audio>
-      
-                </div>
+                        <div class="">
+                              <button id="thanhToanButton" type="button" class="btn btn-primary"
+                                    onclick="thanhToan()">Thanh toán</button>
+                              <!-- data-bs-toggle="modal" data-bs-target="#payModal" -->
+                        </div>
+                        <audio id="audioPay">
+                              <source src="../sound-effect/cashier-quotka-chingquot-sound-effect-129698.mp3"
+                                    type="audio/mpeg">
+                        </audio>
+
+                  </div>
             </div>
             <!-- thông báo thanh toán -->
             <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLable" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header text-center" style="background-color: greenyellow;">
-      
-                            <div class="d-flex justify-content-center flex-column align-item-center w-100">
-                                <i style="font-size: 8vw;" class="fa-regular fa-circle-check"></i>
-                                <h3>Thành công</h3>
-                            </div>
-      
-      
-                            <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                              <div class="modal-header text-center" style="background-color: greenyellow;">
+
+                                    <div class="d-flex justify-content-center flex-column align-item-center w-100">
+                                          <i style="font-size: 8vw;" class="fa-regular fa-circle-check"></i>
+                                          <h3>Thành công</h3>
+                                    </div>
+
+
+                                    <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                              </div>
+
+                              <div class="modal-body text-center">
+                                    <h3>Cảm ơn bạn đã mua hàng!</h3>
+                              </div>
+                              <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tiếp tục mua
+                                          sắm</button>
+
+
+                              </div>
                         </div>
-      
-                        <div class="modal-body text-center">
-                            <h3>Cảm ơn bạn đã mua hàng!</h3>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tiếp tục mua sắm</button>
-      
-      
-                        </div>
-                    </div>
-                </div>
+                  </div>
             </div>
             <!-- thông báo xóa sản phẩm -->
-            <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLable" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header text-center" style="background-color: rgb(254, 78, 78);">
-      
-                            <div class="w-100">
-                                <i style="font-size: 6vw;" class="fa-regular fa-trash-can"></i>
-                            </div>
-                            <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLable"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                              <div class="modal-header text-center" style="background-color: rgb(254, 78, 78);">
+
+                                    <div class="w-100">
+                                          <i style="font-size: 6vw;" class="fa-regular fa-trash-can"></i>
+                                    </div>
+                                    <button type="button" class="btn-close m-0 align-self-start" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                              </div>
+
+                              <div class="modal-body text-center">
+                                    <h3>Bạn chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</h3>
+                              </div>
+                              <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Trở
+                                          lại</button>
+                                    <button type="button" class="btn btn-primary"
+                                          id="xoaSanPhamKhoiGioHangButton">Xóa</button>
+
+
+                              </div>
                         </div>
-      
-                        <div class="modal-body text-center">
-                            <h3>Bạn chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</h3>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Trở lại</button>
-                            <button type="button" class="btn btn-primary" id="xoaSanPhamKhoiGioHangButton">Xóa</button>
-      
-      
-                        </div>
-                    </div>
-                </div>
+                  </div>
             </div>
-        </div>
+      </div>
 </body>
 
 
-      <script src="../js/bootstrap.bundle.js"></script>
-      <script src="../js/swiper-bundle.min.js"></script>
-      <script src="../js/thanhDieuHuong.js"></script>
-      <script src="../js/gioHang.js"></script>
-      <script src="../js/home.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/thanhDieuHuong.js"></script>
+<script src="../js/gioHang.js"></script>
+<script src="../js/home.js"></script>
 
 <script>
       var swiper = new Swiper(".swiper-container", {

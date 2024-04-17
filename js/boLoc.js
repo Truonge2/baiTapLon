@@ -47,7 +47,7 @@ function pushPhanSanPhamDiscount() {
 }
 // Lọc sản phẩm theo hạng mục vs: bestseller, new, discount, nam, nu , thương hiệu, si
 function getArrayIdTheoHangMuc(arrayTheLoai) {
-    let arrayCard = document.querySelectorAll('#PhanToanBoSanPham .card');
+    let arrayCard = phanToanBoSanPhamClone.querySelectorAll('.card');
     let arrayID = [];
     arrayCard.forEach(card => {
         // console.log('vo day');
@@ -165,11 +165,12 @@ function filterBoLoc() {
         arrayTheLoai.push(check.value);
         flag = 1;
     });
-
+    console.log(arrayTheLoai);
     let arrayID = new Set();
     let arrayCard = phanToanBoSanPhamClone.querySelectorAll('.card');
 
     arrayCheck = gia.querySelectorAll('input:checked');
+    console.log(arrayCheck);
     arrayCheck.forEach(check => {
         if (check.value == 'gia4') {
             arrayCard.forEach(card => {
@@ -237,7 +238,6 @@ function filterBoLoc() {
         let col = document.createElement('div');
         col.classList.add('col');
         col.innerHTML = card.outerHTML;
-        console.log(col);
         row.appendChild(col);
     }
     phanToanBoSanPham.innerHTML = '';

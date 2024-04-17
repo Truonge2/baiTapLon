@@ -16,7 +16,7 @@ document.getElementById("XemThemToanBoSanPham").addEventListener("click", functi
                   document.getElementById("XemThemToanBoSanPham").innerHTML = "Ẩn bớt<i class='fas fa-angle-up'></i>";
       }
       else{
-            for(let i=1;i<=3;i++){
+            for(let i=1;i<3;i++){
                   let id="collapsePhanToanBoSanPhamPhan"+i;
                   let sp =document.getElementById(id);            
                   sp.classList.remove("show");                     
