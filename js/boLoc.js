@@ -12,7 +12,7 @@ function pushPhanBestSeller() {
 
     for (let i = 0; i < arrayId.length; i++) {
         if (arrayCard[i]) {
-            // console.log(i);
+
             let card = document.getElementById(arrayId[i]).parentElement.parentElement;
             arrayCard[i].querySelector('img').outerHTML = card.querySelector('img').outerHTML;
             arrayCard[i].querySelector('.card-body').outerHTML = card.querySelector('.card-body').outerHTML;

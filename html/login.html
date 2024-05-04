@@ -78,20 +78,37 @@
 </body>
 
 <script>
-
       const signUpForm = document.getElementById('signup');
       const loginForm = document.getElementById('login');
+      var userName = signUpForm.querySelector('input[name="txt"]');
       var password = signUpForm.querySelector('input[name="pswd"]');
       var email = signUpForm.querySelector('input[name="email"]');
       const passwordRegex = /^.{8,}$/;
+      const emailRegex = /^.{3,}@gmail.com$/;
+      const userNameRegex = /^.{3,}$/;
+      
       // phần sign up
+      userName.addEventListener('input', function (e) {
+            if (!userNameRegex.test(userName.value)) {
+                  userName.setCustomValidity('User name must have at least 3 characters');
+            } else {
+                  userName.setCustomValidity('');
+            }
+      });
       password.addEventListener('input', function (e) {
             if (!passwordRegex.test(password.value)) {
-                  console.log('Password must have at least 8 characters');
                   password.setCustomValidity('Password must have at least 8 characters');
             } else {
-                  console.log('Password is valid');
                   password.setCustomValidity('');
+            }
+      });
+      email.addEventListener('input', function (e) {
+            if (!emailRegex.test(email.value)) {
+     
+                  email.setCustomValidity('Email is invalid');
+            } else {
+                  
+                  email.setCustomValidity('');
             }
       });
       // sau khi sign up thành công thì gán value cho phần login va lưu trữ giá trị trên localstorage
@@ -113,7 +130,8 @@
             checkbox.checked = true;
 
             // thực hiện lưu trữ giá trị trên localstorage
-            account.push({ email: email.value, password: password.value });
+
+            account.push({ name: userName.value, email: email.value, password: password.value });
             localStorage.setItem('account', JSON.stringify(account));
       });
       // phần login thực hiện chuyển trang
@@ -132,7 +150,6 @@
             event.preventDefault();
             let email = loginForm.querySelector('input[name="email"]').value;
             let password = loginForm.querySelector('input[name="pswd"]').value;
-            console.log(email + " " + password);
 
             let account = JSON.parse(localStorage.getItem('account')) || [];
             let indexOfAccount = account.findIndex(item => item.email === email && item.password === password);

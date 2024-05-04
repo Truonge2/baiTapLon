@@ -213,6 +213,11 @@ function removeProductFromCart(sanPhamGioHang, modal) {
 
 // khi thanh toán thì xóa toàn bộ sản phẩm trong giỏ hàng và cập nhật tổng tiền
 function thanhToan() {
+    let taiKhoan = document.getElementById('login').textContent;
+    if(taiKhoan=="Tài Khoản"){
+        alert('Bạn cần đăng nhập để thanh toán');
+        return;
+    }
     let modal = new bootstrap.Modal(document.getElementById('payModal'));
     if (isGioHangEmpty()) {
         modal.hide();
@@ -223,6 +228,7 @@ function thanhToan() {
         offcanvasFooter.querySelector('.tongTien').firstElementChild.innerText = 0;
         let container = document.querySelector('.phanGioHang .offcanvas-body').querySelector('.container');
         container.innerHTML = '';
+        localStorage.removeItem('chiTietSP');
     }
 }
 

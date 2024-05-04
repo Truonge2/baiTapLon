@@ -93,4 +93,31 @@ function luuLocalStoragCuaChiTiet(card) {
 function chuyenTrang(path) {
     window.location.href = path;
 }
- 
+
+var account = JSON.parse(localStorage.getItem('account')) || [];
+// localStorage.removeItem('account');
+    if(account.length>0){
+        let login = document.getElementById('login');
+        let accountName = account[0].name;
+        login.textContent = accountName;
+    }
+    else{
+    
+        let login = document.getElementById('login');
+        login.textContent = "Tài Khoản";
+    }
+
+document.getElementById('login').addEventListener('click', function(e) {
+    if(account.length<=0){
+        return;
+    }
+    if ( confirm('Bạn có muốn đăng xuất không?')==true) {
+        e.preventDefault();
+        localStorage.removeItem('account');
+        localStorage.removeItem('chiTietSP');
+        window.location.href = '../html/home.html';
+    }
+    else{
+        e.preventDefault();
+    }
+});
